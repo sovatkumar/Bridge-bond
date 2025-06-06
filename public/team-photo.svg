@@ -1,0 +1,15 @@
+<svg width="600" height="400" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" fill="#EEEEEE"/>
+  <rect x="150" y="100" width="300" height="200" fill="#DDDDDD"/>
+  <circle cx="200" cy="150" r="30" fill="#BBBBBB"/>
+  <rect x="180" y="190" width="40" height="80" rx="10" fill="#BBBBBB"/>
+  <circle cx="250" cy="150" r="30" fill="#BBBBBB"/>
+  <rect x="230" y="190" width="40" height="80" rx="10" fill="#BBBBBB"/>
+  <circle cx="300" cy="150" r="30" fill="#BBBBBB"/>
+  <rect x="280" y="190" width="40" height="80" rx="10" fill="#BBBBBB"/>
+  <circle cx="350" cy="150" r="30" fill="#BBBBBB"/>
+  <rect x="330" y="190" width="40" height="80" rx="10" fill="#BBBBBB"/>
+  <circle cx="400" cy="150" r="30" fill="#BBBBBB"/>
+  <rect x="380" y="190" width="40" height="80" rx="10" fill="#BBBBBB"/>
+  <text x="300" y="320" font-family="Arial" font-size="16" text-anchor="middle" fill="#888888">Team Photo</text>
+</svg>
