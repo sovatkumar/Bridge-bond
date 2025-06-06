@@ -12,7 +12,7 @@ export default function Policy() {
     backgroundColor: "",
     className: {
       mainCss: "",
-      heading: "text-[#00AEA5]",
+      heading: "primary-blue",
       text: "text-black"
     },
     icon: ""

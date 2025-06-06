@@ -15,7 +15,7 @@ export default function Home() {
           <div className="space-y-10 max-w-6xl m-auto text-center mb-10">
             <h2 className="text-5xl font-bold">
               Why Choose{" "}
-              <span className="text-[#F04042]"> Roam and Learn?</span>
+              <span className="primary-red"> Roam and Learn?</span>
             </h2>
             <p className="text-2xl">
               At Roam and Learn, we believe that some lessons are best
@@ -33,7 +33,7 @@ export default function Home() {
         <div className="min-h-screen container space-y-10 py-20 px-4">
           <div className="space-y-4 text-start">
             <h2 className="text-5xl font-bold">
-              FEATURED <span className="text-[#F04042]">DESTINATIONS</span>
+              FEATURED <span className="primary-red">DESTINATIONS</span>
             </h2>
             <h4 className="text-3xl font-bold">
               Score up to 15% off worldwide travel &apos;til May 31!

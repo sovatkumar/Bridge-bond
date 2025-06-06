@@ -15,7 +15,7 @@ type AboutUsProps = {
 
 export default function AboutUs({ heading, description, paraHeading, img, list, className, icon }: AboutUsProps) {
     return (
-        <div className={` container ${className.mainCss} flex py-16 items-center md:items-start gap-14`} >
+        <div className={` container ${className.mainCss} md:flex py-16 items-center md:items-start gap-14`} >
 
             {/* Text Content */}
             <div className=" md:w-1/2 w-full flex flex-col gap-y-6">
