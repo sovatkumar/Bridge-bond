@@ -11,6 +11,7 @@ export default function Policy() {
     list: [],
     backgroundColor: "",
     className: {
+      mainCss: "",
       heading: "text-[#00AEA5]",
       text: "text-black"
     },
@@ -40,6 +41,7 @@ export default function Policy() {
       "Be punctual for all activities, meals, and group meetups."],
     backgroundColor: "",
     className: {
+      mainCss: "",
       heading: "text-[#F14144]",
       text: "text-black"
     },
@@ -69,6 +71,7 @@ export default function Policy() {
       "Use social media respectfully and avoid posting anything offensive."],
     backgroundColor: "",
     className: {
+      mainCss: "",
       heading: "text-[#FFC809]",
       text: "text-black"
     },
