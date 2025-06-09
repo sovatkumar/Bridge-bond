@@ -18,7 +18,7 @@ export default function page() {
             answer:
                 "Our trips are designed for students in middle school, high school, and early college. Age requirements may vary depending on the destination.",
         },
-        {
+        {           
             question: "Is this an educational program or a tour?",
             answer:
                 "Roam and Learn is a tour-based experience. While you’ll learn a lot through travel, we don’t offer formal lessons or academic programs.",
@@ -38,21 +38,7 @@ export default function page() {
             answer:
                 "The cost typically includes flights, accommodation, meals, entrance fees to attractions, guides, and transportation during the trip. A detailed breakdown is provided for each trip.",
         },
-        {
-            question: "Is travel insurance included?",
-            answer:
-                "Yes! Roam and Learn provides travel insurance for all students. It covers medical emergencies and trip interruptions. Baggage loss is not included, so we recommend students pack responsibly and keep valuables in carry-on bags.",
-        },
-        {
-            question: "Do students travel alone?",
-            answer:
-                "No, students travel in groups with tour leaders and fellow participants. Parents/guardians are kept informed throughout the journey.",
-        },
-        {
-            question: "What’s included in the trip cost?",
-            answer:
-                "The cost typically includes flights, accommodation, meals, entrance fees to attractions, guides, and transportation during the trip. A detailed breakdown is provided for each trip.",
-        },
+        
         {
             question: "Is travel insurance included?",
             answer:
