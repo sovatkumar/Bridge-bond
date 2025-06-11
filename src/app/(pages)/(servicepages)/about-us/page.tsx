@@ -1,5 +1,5 @@
 import React from 'react'
-import AboutUs from '@/app/components/cards/AboutUs';
+import AboutUs from '@/components/cards/AboutUs';
 export default function aboutus() {
     const data = [{
         heading: "",

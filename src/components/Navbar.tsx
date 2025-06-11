@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 function Navbar() {
   return (
@@ -16,20 +17,20 @@ function Navbar() {
         </div>
 
         <div className="nav-links">
-          <a href="#" className="nav-link active">
+          <Link href="/" className="nav-link">
             HOME
-          </a>
-          <a href="#about" className="nav-link">
+          </Link>
+          <Link href="/about" className="nav-link">
             ABOUT US
-          </a>
-          <a href="#destinations" className="nav-link">
+          </Link>
+          <Link href="/destinations" className="nav-link">
             DESTINATIONS
-          </a>
-          <a href="#contact" className="nav-link">
+          </Link>
+          <Link href="/contact-us" className="nav-link active">
             CONTACT US
-          </a>
+          </Link>
 
-          <div className="language-selector">
+          {/* <div className="language-selector">
             <span>EN</span>
             <Image
               src="/arrow_drop_down.svg"
@@ -38,7 +39,7 @@ function Navbar() {
               height={24}
               className="text-black"
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </nav>

@@ -1,5 +1,5 @@
-import CodeOfConduct from "@/app/components/cards/CodeOfConduct";
-import PageBanner from "@/app/components/PageBanner";
+import CodeOfConduct from "@/components/cards/CodeOfConduct";
+import PageBanner from "@/components/PageBanner";
 import { Heading } from "lucide-react";
 import { text } from "stream/consumers";
 

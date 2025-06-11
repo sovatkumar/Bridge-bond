@@ -9,6 +9,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
+import Homebanner from '../../components/banners/Homebanner';
 
 export default function Home() {
   const destinations = [
@@ -64,35 +65,7 @@ export default function Home() {
     <>
       <article>
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-5 lg:pl-20 rounded-4xl items-center justify-around lightGradientColor ">
-
-            {/* Left Column - Text Content */}
-            <div className="space-y-6">
-              <h1 className="text-3xl md:text-6xl xl:text-7xl font-bold leading-tight">
-                Fuel Your <br /> Curiosity. Let the <span className="primary-blue">Journey Begin.</span>
-              </h1>
-              <p className="text-base md:text-lg max-w-md">
-                With roam n learn, every trip's a new story full of epic sights, big laughs, and a vibe you can't fake.
-                If you are ready to go beyond the usual, you are in the right place. Let's roam.
-              </p>
-              <button className="bg-primary-red text-white font-semibold px-10 py-3 rounded-full w-fit transition">
-                LET’S GO
-              </button>
-            </div>
-
-            {/* Right Column - Image with Background */}
-            <div className="relative w-full h-full bg-[url('/images/layer.png')] bg-no-repeat bg-contain bg-center">
-              <div className="flex justify-self-center">
-                <Image
-                  width={628}
-                  height={684}
-                  src="/images/home-banner.png"
-                  alt="Travel Image 3"
-                  className="rounded-xl object-cover"
-                />
-              </div>
-            </div>
-          </div>
+          <Homebanner/>
         </div>
       </article>
 
