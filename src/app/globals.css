@@ -265,7 +265,9 @@ body {
     rgba(244, 79, 75, 1) 100%
   );
 }
-
+.boxShadow {
+  box-shadow: 4px 4px 24px 0px rgba(0, 174, 165, 0.12);
+}
 h1,
 h2,
 h3,
