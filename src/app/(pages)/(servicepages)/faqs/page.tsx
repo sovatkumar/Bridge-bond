@@ -18,7 +18,7 @@ export default function page() {
             answer:
                 "Our trips are designed for students in middle school, high school, and early college. Age requirements may vary depending on the destination.",
         },
-        {           
+        {
             question: "Is this an educational program or a tour?",
             answer:
                 "Roam and Learn is a tour-based experience. While you’ll learn a lot through travel, we don’t offer formal lessons or academic programs.",
@@ -38,7 +38,7 @@ export default function page() {
             answer:
                 "The cost typically includes flights, accommodation, meals, entrance fees to attractions, guides, and transportation during the trip. A detailed breakdown is provided for each trip.",
         },
-        
+
         {
             question: "Is travel insurance included?",
             answer:
@@ -126,8 +126,9 @@ export default function page() {
                         collapsible
                         className="w-full"
                         defaultValue="item-1"
+                        key={index}
                     >
-                        <AccordionItem value="item-2" key={index} className="mb-2">
+                        <AccordionItem value="item-2" className="mb-2">
                             <AccordionTrigger className="bg-primary-blue rounded-none rounded-t-3xl text-white px-5 text-3xl">
                                 {faq.question}
                             </AccordionTrigger>
