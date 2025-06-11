@@ -185,8 +185,6 @@ body {
   font-family: "Bree Serif", serif;
 }
 
-
-
 /* gradientColors */
 
 .redBackgroundGradientColor {
@@ -268,11 +266,7 @@ h5,
 h6 {
   font-family: var(--font-bree-serif) !important;
 }
-<<<<<<< HEAD
 
-/* font-size  */
-
-/* Use text-[52px] in Tailwind instead of this custom class */
 @layer utilities {
   /* max width  */
   .max-w-8xl{
@@ -291,5 +285,3 @@ h6 {
     font-size: 85px;
   }
 }
-=======
->>>>>>> 9c79323f85263bff6f679018d6f0061253eb8722

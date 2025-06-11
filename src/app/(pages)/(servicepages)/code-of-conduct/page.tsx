@@ -1,4 +1,5 @@
 import CodeOfConduct from "@/components/cards/CodeOfConduct";
+import Image from 'next/image';
 
 
 export default function Policy() {
@@ -109,15 +110,27 @@ export default function Policy() {
         <div className="w-full py-20 px-4 bg-white text-center relative">
           <div className="container mx-auto md:20 xl:px-96">
             <h3 className="text-2xl md:text-3xl lg:text-5xl font-regular text-black mb-6 leading-[100%]">
-              Violation of this code may result in disciplinary action, including being sent home at the guardian’s expense.
+              Violation of this code may result in disciplinary action, including being sent home at the guardian's expense.
             </h3>
             <p className="inline-block text-base md:text-lg lg:text-4xl font-regular  px-6 py-2 rounded">
-              Let’s make every journey inspiring, respectful, and unforgettable—for everyone.
+              Let's make every journey inspiring, respectful, and unforgettable—for everyone.
             </p>
           </div>
 
-          <img src="/images/top-left-dash.png" alt="" className="absolute top-16 left-0 w-24 md:w-48 xl:w-60" />
-          <img src="/images/top-right-dash.png" alt="" className="absolute top-16 right-0 w-24 md:w-48 xl:w-60" />
+          <Image 
+            src="/images/top-left-dash.png" 
+            alt=""
+            width={24}
+            height={48}
+            className="absolute top-16 left-0 w-24 md:w-48 xl:w-60"
+          />
+          <Image 
+            src="/images/top-right-dash.png" 
+            alt=""
+            width={24}
+            height={48}
+            className="absolute top-16 right-0 w-24 md:w-48 xl:w-60"
+          />
         </div>
 
       </article>

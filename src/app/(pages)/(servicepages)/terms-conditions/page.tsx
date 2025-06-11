@@ -11,7 +11,7 @@ export default function page() {
                         <span className="primary-red"> TERMS AND CONDITIONS</span>
                     </h2>
                     <p className="text-lg md:text-2xl">
-                        By opting in to receive alerts from "Roam N Learn" you consent to
+                        By opting in to receive alerts from &quot;Roam N Learn&quot; you consent to
                         receive SMS messages that include booking reminders and updates on the
                         latest Roam N Learn news, deals and trips. To opt in, please complete
                         the Newsletter Signup form on the homepage. After Opt-in, we will send
@@ -25,6 +25,8 @@ export default function page() {
                         any goods or services. By signing up, you confirm that you are over
                         the age of 13.
                     </p>
+                    <p>By using our services, you agree to these &quot;Terms and Conditions&quot;.</p>
+                    <p>Please read these &quot;Terms and Conditions&quot; carefully.</p>
                 </div>
                 <div className="md:w-1/2 w-full">
                     <Image
@@ -41,7 +43,7 @@ export default function page() {
                     STOP Information
                 </h4>
                 <p className="text-lg md:text-2xl">
-                    Text STOP to 12345 to stop receiving "Roam N Learn" messages from Roam
+                    Text STOP to 12345 to stop receiving &quot;Roam N Learn&quot; messages from Roam
                     N Learn. You will receive a confirmation text.
                 </p>
             </div>

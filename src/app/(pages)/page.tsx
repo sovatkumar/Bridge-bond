@@ -176,7 +176,7 @@ export default function Home() {
             <h2 className="text-3xl lg:text-5xl xl:text-52 font-bold mb-5">
               Why Choose <span className="primary-blue">Us?</span>
             </h2>
-          
+            <p>We&apos;re committed to providing the best experience for your child.</p>
           </div>
           <div className="grid grid-cols-2 gap-8">
             {
@@ -189,12 +189,12 @@ export default function Home() {
                 {
                 icon:"/icons/cell-phone.png",
                 title:"Regular Parent Updates",
-                description:"We keep you informed throughout the trip with real-time updates, messages, and photos so you always know where your child is and what they’re doing."
+                description:"We keep you informed throughout the trip with real-time updates, messages, and photos so you always know where your child is and what they're doing."
               },
                 {
                 icon:"/icons/health-medical-support.png",
                 title:"Health & Medical Support",
-                description:"We’re prepared for any health-related needs, with access to medical professionals, first aid, and immediate support if required"
+                description:"We're prepared for any health-related needs, with access to medical professionals, first aid, and immediate support if required"
               },
                 {
                 icon:"/icons/age-appropriate.png",

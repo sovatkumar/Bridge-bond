@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "@/app/globals.css";
-import PageBanner from "@/components/PageBanner";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,7 +26,7 @@ export default function ServicePagesRootLayout({
 }>) {
   return (
     <html lang="en">
-      <PageBanner title="Code of Conduct" />
+      {/* <PageBanner title="Code of Conduct" /> */}
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
