@@ -98,7 +98,7 @@ export default function Home() {
               Top <span className="text-red-500">Destinations</span>
             </h2>
             <h4 className="text-2xl font-semibold">
-              Score up to 15% off worldwide travel &apos;til May 31!
+              Score up to 15% off worldwide travel 'til May 31!
             </h4>
             <p className="text-lg text-gray-700">
               All month long, score 15% off select trips across the globe, with
@@ -106,7 +106,7 @@ export default function Home() {
               score 10% off select adventures with travel between August 1 and
               September 30, 2025. Conquer Mt. Fuji in Japan. Island-hop your way
               through Thailand. Bask in that sweet, sweet Tuscan sun. You name
-              the adventure, we&apos;ll show you the sale.
+              the adventure, we'll show you the sale.
             </p>
             <Button className="!rounded-3xl mt-6 px-8 py-4 bg-red-500 text-white shadow-md hover:bg-red-600 transition-colors">
               See All

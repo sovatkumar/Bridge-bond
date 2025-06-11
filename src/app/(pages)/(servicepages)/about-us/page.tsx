@@ -2,21 +2,24 @@ import React from 'react'
 import AboutUs from '@/components/cards/AboutUs';
 export default function aboutus() {
     const data = [{
-        heading: "",
+        heading: "About Us",
         description: ["Roam and Learn is where travel meets adventure—and learning just happens along the way. We plan awesome trips just for students who want to see the world, make new friends, and experience life outside the classroom. Think cool cities, amazing sights, and unforgettable moments—all packed into one exciting journey.",
             "No boring lectures. No heavy textbooks. Just real experiences, new cultures, and stories you'll never forget. Our team takes care of everything—from planning the perfect route to making sure you're safe, comfy, and having the time of your life. We’ve got your back every step of the way."
         ],
         paraHeading: "Why travel with us?",
-        img: "about-us-travel.png",
+        img: "",
+        img_1: "mountain.png",
+        img_2: "about-travel.png",
+        img_3: "about-us.png",
         list: ["Trips made just for students (yes, just you!)",
             "Safe, fun, and super well-organized",
             "A chance to grow, explore, and see the world your way"
         ],
         className: {
             mainCss: "",
-            heading: "",
+            heading: "primary-red",
             text: "text-black",
-            paraHeading: "text-[#F14144]"
+            paraHeading: "text-black"
         },
         icon: "Objects.png"
     },
@@ -28,9 +31,12 @@ export default function aboutus() {
         ],
         paraHeading: "",
         img: "our-story.png",
+        img_1: "",
+        img_2: "",
+        img_3: "",
         list: [],
         className: {
-            mainCss: "flex-row-reverse",
+            mainCss: "flex-row-reverse blueBackgroundGradientColor rounded-4xl",
             heading: "text-black",
             text: "text-black",
             paraHeading: ""
@@ -44,6 +50,9 @@ export default function aboutus() {
         ],
         paraHeading: "Ready to explore? Let’s go!",
         img: "meetteam.png",
+        img_1: "",
+        img_2: "",
+        img_3: "",
         list: [],
         className: {
             mainCss: "",
@@ -59,6 +68,9 @@ export default function aboutus() {
                 <article key={index} >
                     <AboutUs
                         img={item.img}
+                        img_1={item.img_1}
+                        img_2={item.img_2}
+                        img_3={item.img_3}
                         heading={item.heading}
                         description={item.description}
                         paraHeading={item.paraHeading}

@@ -11,7 +11,7 @@ function HomeBanner() {
         {/* Left Column - Text Content */}
         <div className="space-y-6 p-16">
           <h1 className="text-3xl md:text-6xl xl:text-7xl font-bold leading-tight">
-            Fuel Your <br /> Curiosity. Let the{" "}
+            Fuel Your <br /> Curiosity. Let the
             <span className="primary-blue">Journey Begin.</span>
           </h1>
           <p className="text-base md:text-lg max-w-md">
