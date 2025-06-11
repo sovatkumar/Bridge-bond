@@ -1,44 +1,139 @@
+import React from 'react'
+import Image from 'next/image';
+import Link from "next/link"
+import { Card, CardContent } from "@/components/ui/card"
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
+
 export default function Home() {
+  const destinations = [
+    {
+      id: 1,
+      image: "/images/taj-mahal.png",
+      alt: "Taj Mahal",
+      tourType: "6 Day Tour",
+      name: "Bharat Darshan",
+      validity: "Valid on Jun 12, 2025",
+      itineraryLink: "#",
+    },
+    {
+      id: 2,
+      image: "/images/taj-mahal.png",
+      alt: "Maldives",
+      tourType: "6 Day Tour",
+      name: "Bharat Darshan",
+      validity: "Valid on Jun 12, 2025",
+      itineraryLink: "#",
+    },
+    {
+      id: 3,
+      image: "/images/taj-mahal.png",
+      alt: "Hawa Mahal",
+      tourType: "6 Day Tour",
+      name: "Bharat Darshan",
+      validity: "Valid on Jun 12, 2025",
+      itineraryLink: "#",
+    },
+    {
+      id: 4,
+      image: "/images/taj-mahal.png",
+      alt: "Taj Mahal",
+      tourType: "6 Day Tour",
+      name: "Bharat Darshan",
+      validity: "Valid on Jun 12, 2025",
+      itineraryLink: "#",
+    },
+    {
+      id: 5,
+      image: "/images/taj-mahal.png",
+      alt: "Maldives",
+      tourType: "6 Day Tour",
+      name: "Bharat Darshan",
+      validity: "Valid on Jun 12, 2025",
+      itineraryLink: "#",
+    },
+
+  ];
+
   return (
     <>
       <article>
-        <div className="min-h-screen container py-10 px-4">
-          <div className="min-h-[80vh] bg-no-repeat bg-center bg-cover bg-[url('/images/home-banner-background.png')] rounded-[2rem] overflow-hidden border border-gray-200 shadow-lg">
-            <div></div>
-            <div></div>
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-5 lg:pl-20 rounded-4xl items-center justify-around lightGradientColor ">
+
+            {/* Left Column - Text Content */}
+            <div className="space-y-6">
+              <h1 className="text-3xl md:text-6xl xl:text-7xl font-bold leading-tight">
+                Fuel Your <br /> Curiosity. Let the <span className="primary-blue">Journey Begin.</span>
+              </h1>
+              <p className="text-base md:text-lg max-w-md">
+                With roam n learn, every trip's a new story full of epic sights, big laughs, and a vibe you can't fake.
+                If you are ready to go beyond the usual, you are in the right place. Let's roam.
+              </p>
+              <button className="bg-primary-red text-white font-semibold px-10 py-3 rounded-full w-fit transition">
+                LET’S GO
+              </button>
+            </div>
+
+            {/* Right Column - Image with Background */}
+            <div className="relative w-full h-full bg-[url('/images/layer.png')] bg-no-repeat bg-contain bg-center">
+              <div className="flex justify-self-center">
+                <Image
+                  width={628}
+                  height={684}
+                  src="/images/home-banner.png"
+                  alt="Travel Image 3"
+                  className="rounded-xl object-cover"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </article>
+
       {/* why choose Room and learn  */}
       <article>
-        <div className="min-h-screen container py-20 px-4">
+        <div className="min-h-screen container py-10 lg:py-20 px-4">
           <div className="space-y-10 max-w-6xl m-auto text-center mb-10">
-            <h2 className="text-5xl font-bold">
-              Why Choose{" "}
-              <span className="primary-red"> Roam and Learn?</span>
+            <h2 className="text-3xl lg:text-[52px] font-bold mb-5">
+              Why Choose <span className="primary-blue">Roam and Learn?</span>
             </h2>
-            <p className="text-2xl">
-              At Roam and Learn, we believe that some lessons are best
-              experienced in the real world. Our free student tours take you
-              beyond the classroom to explore new places, cultures, and
-              perspectives. It&apos;s a chance to grow, connect, and discover —
-              all while having the time of your life.
+            <p className="text-lg lg:text-2xl">
+              With roam n learn, every trip's a new story full of epic sights, big laughs, and a vibe you can't fake. If you are ready to go beyond the usual, you are in the right place. Let's roam
             </p>
           </div>
-          <div className="min-h-[80vh] bg-no-repeat bg-center bg-cover bg-[url('/images/home-banner-background.png')] rounded-[2rem] overflow-hidden border border-gray-200 shadow-lg"></div>
+
+          <div className="rounded-xl overflow-hidden shadow-lg">
+            <video
+              className="w-full h-full object-cover"
+              autoPlay
+              muted
+              loop
+              playsInline
+            >
+              <source src="" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
         </div>
       </article>
       {/* Feactured section  */}
-      <article>
-        <div className="min-h-screen container space-y-10 py-20 px-4">
+      <article className="min-h-screen container py-20 px-4">
+        <div className="md:grid grid-cols-2 gap-10">
+          {/* Left Section: Promotional Message */}
           <div className="space-y-4 text-start">
             <h2 className="text-5xl font-bold">
-              FEATURED <span className="primary-red">DESTINATIONS</span>
+              Top <span className="text-red-500">Destinations</span>
             </h2>
-            <h4 className="text-3xl font-bold">
+            <h4 className="text-2xl font-semibold">
               Score up to 15% off worldwide travel &apos;til May 31!
             </h4>
-            <p className="text-2xl">
+            <p className="text-lg text-gray-700">
               All month long, score 15% off select trips across the globe, with
               travel by July 31, 2025. And if you wanna travel a little later,
               score 10% off select adventures with travel between August 1 and
@@ -46,26 +141,79 @@ export default function Home() {
               through Thailand. Bask in that sweet, sweet Tuscan sun. You name
               the adventure, we&apos;ll show you the sale.
             </p>
+            <button className="mt-6 px-6 py-3 bg-red-500 text-white rounded-lg shadow-md hover:bg-red-600 transition-colors">
+              See All
+            </button>
           </div>
-          <div className="min-h-[80vh] bg-no-repeat bg-center bg-cover bg-[url('/images/home-banner-background.png')] rounded-[2rem] overflow-hidden border border-gray-200 shadow-lg"></div>
-          <div>
-            <button className="m-auto">Read more </button>
+
+          {/* Right Section: Destination Cards Slider */}
+          <div className="relative ">
+            <Carousel
+              opts={{
+                align: "start",
+              }}
+
+              className="w-full"
+            >
+              <CarouselContent className="-ml-6">
+                {destinations.map((destination) => (
+                  <CarouselItem key={destination.id} className="pl-6 md:basis-1.3/3 ">
+
+                    <div className="p-1">
+                      <Card className="w-80 h-96 rounded-lg shadow-lg overflow-hidden relative group">
+                        <CardContent className="p-0 flex items-center justify-center h-full w-full">
+                          <Image
+                            src={destination.image}
+                            alt={destination.alt}
+                            layout="fill"
+                            objectFit="cover"
+                            className="transition-transform duration-300 group-hover:scale-105"
+                          />
+                          <div className="absolute w-full inset-0 p-6 flex flex-col justify-end text-white">
+                            <p className="text-sm">{destination.tourType}</p>
+                            <h3 className="text-2xl font-bold mt-1">
+                              {destination.name}
+                            </h3>
+                            <p className="text-sm mt-1">{destination.validity}</p>
+                            <Link href={destination.itineraryLink} passHref>
+                              <span className="mt-4 inline-flex items-center text-red-400 hover:text-red-300 transition-colors cursor-pointer">
+                                View itinerary{" "}
+                                <span className="ml-2">→</span>
+                              </span>
+                            </Link>
+                          </div>
+                        </CardContent>
+                      </Card>
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious className="absolute left-5 -bottom-15 -translate-y-1/2 primary-blue border-none hover:text-gray-800 shadow-none transition-colors" />
+              <CarouselNext className="absolute left-15 -bottom-15 -translate-y-1/2 primary-red border-none hover:text-gray-800 shadow-none transition-colors" />
+            </Carousel>
           </div>
         </div>
       </article>
-      <article className="mb-20 w-full bg-no-repeat bg-center bg-cover bg-[url('/images/home-page-red-background.png')] relative">
-        <div className="absolute inset-0 bg-red-900/50"></div>
-        <div className="container py-20 px-4 h-full relative z-10">
-          <div className="h-full grid grid-cols-1 align-items-center md:grid-cols-3 gap-8">
-            <div className="col-span-2 space-y-6">
-              <h2 className="text-4xl md:text-6xl lg:text-8xl text-white font-bold">
+      <article>
+        <div className="container px-4 py-20 h-full relative ">
+          <div className="h-full bg-no-repeat bg-center bg-cover yellowBackgroundGradientColor rounded-4xl px-8 pt-10 z-10 grid grid-cols-2 align-items-center gap-8">
+            <div className="flex flex-col justify-center gap-y-10">
+              <h2 className="text-3xl md:text-4xl lg:text-6xl text-white font-bold">
                 Now in the station your next adventure
               </h2>
-              <button className="bg-white text-black px-8 py-3 rounded-full font-semibold hover:bg-opacity-90 transition-all">
+              <button className="max-w-fit bg-primary-yellow text-white px-8 py-3 rounded-full font-semibold hover:bg-opacity-90 transition-all text-base md:text-lg ">
                 Apply & Register Now
               </button>
             </div>
-            <div className="hidden md:block"></div>
+            <div className="">
+              <Image
+                width={600}
+                height={600}
+                src="/images/station-adventure.png"
+                alt="Travel Image 3"
+                className="rounded-xl object-cover"
+              />
+            </div>
           </div>
         </div>
       </article>

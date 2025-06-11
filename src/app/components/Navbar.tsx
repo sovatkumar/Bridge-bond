@@ -3,11 +3,11 @@ import Image from "next/image";
 
 function Navbar() {
   return (
-    <nav className="bg-[#c41e3a]">
+    <nav className="">
       <div className="container py-10 px-4 flex justify-between items-center">
         <div className="logo-container">
           <Image
-            src="/images/roam-n-learn.png"
+            src="/images/roam-n-learn-logo.png"
             alt="Roam N Learn Logo"
             width={200}
             height={60}
@@ -36,6 +36,7 @@ function Navbar() {
               alt="Language Selector"
               width={24}
               height={24}
+              className="text-black"
             />
           </div>
         </div>

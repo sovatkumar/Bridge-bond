@@ -135,7 +135,7 @@ body {
 }
 
 .container {
-  max-width: 90%;
+  max-width: 85%;
   margin: 0 auto;
 }
 
@@ -153,7 +153,7 @@ body {
 }
 
 .nav-link {
-  color: var(--text-light);
+  color: var(--text-dark);
   font-weight: 500;
   text-decoration: none;
   text-transform: uppercase;
@@ -175,7 +175,7 @@ body {
   display: flex;
   align-items: center;
   gap: 0.25rem;
-  color: var(--text-light);
+  color: var(--text-dark);
   cursor: pointer;
 }
 
@@ -223,12 +223,29 @@ body {
     rgba(254, 175, 74, 1) 100%
   );
 }
+.lightGradientColor {
+  background: #ffeeb1;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 238, 177, 1) 0%,
+    rgba(255, 249, 226, 1) 100%
+  );
+}
 .primary-red {
   color: #f04042;
+}
+.bg-primary-red {
+  background: #f04042;
 }
 .primary-blue {
   color: #00aea5;
 }
 .bg-primary-blue {
   background: #00aea5;
+}
+.primary-yellow {
+  color: #ffc809;
+}
+.bg-primary-yellow {
+  background: #ffc809;
 }
