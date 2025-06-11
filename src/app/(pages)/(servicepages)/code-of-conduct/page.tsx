@@ -1,7 +1,5 @@
 import CodeOfConduct from "@/components/cards/CodeOfConduct";
-import PageBanner from "@/components/PageBanner";
-import { Heading } from "lucide-react";
-import { text } from "stream/consumers";
+
 
 export default function Policy() {
   const data = [{

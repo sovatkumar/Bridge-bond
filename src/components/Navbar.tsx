@@ -10,8 +10,8 @@ function Navbar() {
           <Image
             src="/images/roam-n-learn-logo.png"
             alt="Roam N Learn Logo"
-            width={200}
-            height={60}
+            width={250}
+            height={100}
             priority
           />
         </div>
