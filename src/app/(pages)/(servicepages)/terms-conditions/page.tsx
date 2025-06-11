@@ -1,9 +1,9 @@
 import React from "react";
-import Image from 'next/image';
 
 export default function page() {
     return (
         <div className="container py-20 px-4">
+<<<<<<< HEAD
             <div className="flex py-10 gap-10">
                 <div className="py-5 w-1/2">
                     <h2 className="text-3xl md:text-5xl xl:text-6xl text-black pb-5">
@@ -37,6 +37,28 @@ export default function page() {
                         className="rounded-3xl w-full object-cover"
                     />
                 </div>
+=======
+            <div className="py-5">
+                <h2 className="text-3xl md:text-5xl xl:text-6xl text-black pb-5">
+                    Roam N Learn
+                    <span className="primary-red">TERMS AND CONDITIONS</span>
+                </h2>
+                <p className="text-lg md:text-2xl">
+                    By opting in to receive alerts from "Roam N Learn" you consent to
+                    receive SMS messages that include booking reminders and updates on the
+                    latest Roam N Learn news, deals and trips. To opt in, please complete
+                    the Newsletter Signup form on the homepage. After Opt-in, we will send
+                    you a message confirming your opt-in to 75322 to receive Roam N Learn
+                    Alerts. Message and data rates may apply. 2 messages per month.
+                    <br />
+                    <br />
+                    By opting in to this service, you agree to receive mobile text alerts
+                    using an automatic telephone dialing system. Consent to receive
+                    marketing text messages is not required as a condition of purchasing
+                    any goods or services. By signing up, you confirm that you are over
+                    the age of 13.
+                </p>
+>>>>>>> 846dd711148bdd5b3632bcd2e4ab63d7405eac44
             </div>
             <div className="py-5">
                 <h4 className="text-xl md:text-3xl primary-blue  pb-2">

@@ -6,7 +6,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-export default function Page() {
+export default function page() {
   const faqs = [
     {
       question: "What is Roam and Learn?",
@@ -21,7 +21,7 @@ export default function Page() {
     {
       question: "Is this an educational program or a tour?",
       answer:
-        "Roam and Learn is a tour-based experience. While you'll learn a lot through travel, we don't offer formal lessons or academic programs.",
+        "Roam and Learn is a tour-based experience. While you’ll learn a lot through travel, we don’t offer formal lessons or academic programs.",
     },
     {
       question: "Are the trips supervised?",
@@ -34,7 +34,7 @@ export default function Page() {
         "No, students travel in groups with tour leaders and fellow participants. Parents/guardians are kept informed throughout the journey.",
     },
     {
-      question: "What's included in the trip cost?",
+      question: "What’s included in the trip cost?",
       answer:
         "The cost typically includes flights, accommodation, meals, entrance fees to attractions, guides, and transportation during the trip. A detailed breakdown is provided for each trip.",
     },
@@ -76,10 +76,9 @@ export default function Page() {
     {
       question: "What happens if a student breaks the rules?",
       answer:
-        "We follow a clear Code of Conduct. Major violations may result in a student being sent home at the guardian's expense.",
+        "We follow a clear Code of Conduct. Major violations may result in a student being sent home at the guardian’s expense.",
     },
   ];
-
   return (
     <div className="container py-20">
       <div className="flex m-auto justify-between pb-10">
@@ -91,7 +90,10 @@ export default function Page() {
           <input
             type="search"
             id="default-search"
-            className="block p-2 text-sm text-gray-900 border border-gray-300 bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 rounded-4xl"
+            className="block p-2 text-sm text-gray-900 border border-gray-300 bg-gray-50 
+          focus:ring-blue-500 focus:border-blue-500 
+          dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white 
+          dark:focus:ring-blue-500 dark:focus:border-blue-500 rounded-4xl"
             placeholder="Search"
             required
           />
@@ -115,6 +117,7 @@ export default function Page() {
           </div>
         </form>
       </div>
+
       <div>
         {faqs.map((faq, index) => (
           <Accordion
@@ -122,12 +125,12 @@ export default function Page() {
             collapsible
             className="w-full"
             defaultValue="item-1"
-            key={index}
           >
-            <AccordionItem value={`item-${index}`} className="mb-2">
+            <AccordionItem value="item-2" key={index} className="mb-2">
               <AccordionTrigger className="bg-primary-blue rounded-none rounded-t-3xl text-white px-5 text-3xl">
                 {faq.question}
               </AccordionTrigger>
+
               <AccordionContent className="text-xl flex flex-col gap-4 text-balance bg-[#fdf8f2] text-gray-800 px-4 py-3">
                 {faq.answer}
               </AccordionContent>
