@@ -23,7 +23,7 @@ export default function page() {
         "Disable cookies via your browser settings or opt out of tracking.",
     ];
     return (
-        <div className="container py-20 lg:w-3/4">
+        <div className="container py-20 px-4 lg:w-[70%]">
             <div>
                 <h1 className="text-4xl md:text-6xl py-5">Introduction</h1>
                 <p className="text-lg md:text-2xl leading-normal lg:leading-9">

@@ -40,7 +40,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/about"
+                  href="/about-us"
                   className="text-gray-100 hover:text-white transition-colors"
                 >
                   About Us
@@ -87,7 +87,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/faq"
+                  href="/faqs"
                   className="text-gray-100 hover:text-white transition-colors"
                 >
                   FAQ
@@ -95,7 +95,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/terms-condition"
+                  href="/terms-conditions"
                   className="text-gray-100 hover:text-white transition-colors"
                 >
                   Terms & Conditions

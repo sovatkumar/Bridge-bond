@@ -20,7 +20,7 @@ function Navbar() {
           <Link href="/" className="nav-link">
             HOME
           </Link>
-          <Link href="/about" className="nav-link">
+          <Link href="/about-us" className="nav-link">
             ABOUT US
           </Link>
           <Link href="/destinations" className="nav-link">
