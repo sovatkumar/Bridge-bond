@@ -97,10 +97,10 @@ export default function page() {
   };
 
   return (
-    <div className='container py-10 lg:py-20 md:px-4'>
+    <section className='container max-w-8xl py-10 lg:py-20 md:px-4'>
       <div className="grid grid-cols-1 md:grid-cols-3 justify-center gap-10">
         {contacts.map((card, index) => (
-          <Card key={index} className="!gap-4 text-center shadow-sm boxShadow border-none">
+          <Card key={index} className="!gap-4 text-center shadow-sm boxShadow border-none !rounded-3xl">
             <div className="flex justify-center bg-primary-red m-auto text-white p-4 rounded-full mb-4 border-none" >{card.icon}</div>
             <CardHeader>
               <CardTitle className="text-lg md:text-4xl">{card.title}</CardTitle>
@@ -126,58 +126,16 @@ export default function page() {
               <SelectItem value="akst">Alaska Standard Time (AKST)</SelectItem>
               <SelectItem value="hst">Hawaii Standard Time (HST)</SelectItem>
             </SelectGroup>
-            <SelectGroup>
-              <SelectLabel>Europe & Africa</SelectLabel>
-              <SelectItem value="gmt">Greenwich Mean Time (GMT)</SelectItem>
-              <SelectItem value="cet">Central European Time (CET)</SelectItem>
-              <SelectItem value="eet">Eastern European Time (EET)</SelectItem>
-              <SelectItem value="west">
-                Western European Summer Time (WEST)
-              </SelectItem>
-              <SelectItem value="cat">Central Africa Time (CAT)</SelectItem>
-              <SelectItem value="eat">East Africa Time (EAT)</SelectItem>
-            </SelectGroup>
-            <SelectGroup>
-              <SelectLabel>Asia</SelectLabel>
-              <SelectItem value="msk">Moscow Time (MSK)</SelectItem>
-              <SelectItem value="ist">India Standard Time (IST)</SelectItem>
-              <SelectItem value="cst_china">China Standard Time (CST)</SelectItem>
-              <SelectItem value="jst">Japan Standard Time (JST)</SelectItem>
-              <SelectItem value="kst">Korea Standard Time (KST)</SelectItem>
-              <SelectItem value="ist_indonesia">
-                Indonesia Central Standard Time (WITA)
-              </SelectItem>
-            </SelectGroup>
-            <SelectGroup>
-              <SelectLabel>Australia & Pacific</SelectLabel>
-              <SelectItem value="awst">
-                Australian Western Standard Time (AWST)
-              </SelectItem>
-              <SelectItem value="acst">
-                Australian Central Standard Time (ACST)
-              </SelectItem>
-              <SelectItem value="aest">
-                Australian Eastern Standard Time (AEST)
-              </SelectItem>
-              <SelectItem value="nzst">New Zealand Standard Time (NZST)</SelectItem>
-              <SelectItem value="fjt">Fiji Time (FJT)</SelectItem>
-            </SelectGroup>
-            <SelectGroup>
-              <SelectLabel>South America</SelectLabel>
-              <SelectItem value="art">Argentina Time (ART)</SelectItem>
-              <SelectItem value="bot">Bolivia Time (BOT)</SelectItem>
-              <SelectItem value="brt">Brasilia Time (BRT)</SelectItem>
-              <SelectItem value="clt">Chile Standard Time (CLT)</SelectItem>
-            </SelectGroup>
+
           </SelectContent>
         </Select>
       </div>
 
-      <div className='flex w-full justify-center shadow-sm px-5 py-10 rounded-4xl'>
+      <Card className='flex w-full justify-center shadow-sm p-10 rounded-4xl'>
         <Form {...form}>
           <form
             onSubmit={form.handleSubmit(onSubmit)}
-            className="flex-1 max-w-6xl space-y-6"
+            className="flex-1  space-y-6"
           >
             <h2 className='text-2xl md:text-3xl'>Please provide your details:</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -187,7 +145,7 @@ export default function page() {
                 render={({ field }) => (
                   <FormItem>
                     <FormControl>
-                      <Input placeholder="First Name" {...field} />
+                      <Input className='lg:h-12 xl:h-14' placeholder="First Name" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -200,7 +158,7 @@ export default function page() {
                 render={({ field }) => (
                   <FormItem>
                     <FormControl>
-                      <Input placeholder="Last Name" {...field} />
+                      <Input className='lg:h-12 xl:h-14' placeholder="Last Name" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -214,7 +172,7 @@ export default function page() {
                 render={({ field }) => (
                   <FormItem>
                     <FormControl>
-                      <Input type="email" placeholder="Enter Your Email" {...field} />
+                      <Input className='lg:h-12 xl:h-14' type="email" placeholder="Enter Your Email" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -227,7 +185,7 @@ export default function page() {
                 render={({ field }) => (
                   <FormItem>
                     <FormControl>
-                      <Input type="tel" placeholder="Enter Your Phone Number" {...field} />
+                      <Input className='lg:h-12 xl:h-14' type="tel" placeholder="Enter Your Phone Number" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -240,7 +198,7 @@ export default function page() {
               render={({ field }) => (
                 <FormItem>
                   <FormControl>
-                    <Textarea placeholder="Write Your Message..." rows={10} {...field} />
+                    <Textarea placeholder="Write Your Message..." rows={20} {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -264,7 +222,7 @@ export default function page() {
             </Button>
           </form>
         </Form>
-      </div>
-    </div>
+      </Card>
+    </section>
   )
 }
