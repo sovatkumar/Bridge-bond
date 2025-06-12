@@ -83,22 +83,11 @@ export default function page() {
     <div className="container py-20">
       <div className="flex m-auto justify-between pb-10">
         <h1 className="text-4xl lg:text-6xl">
-          Top frequently asked <span className="primary-red">questions</span>
+          Top frequently asked <span className="primary-blue">questions</span>
         </h1>
-        <form className="flex mt-6 items-center">
-          {/* Search Input */}
-          <input
-            type="search"
-            id="default-search"
-            className="block p-2 text-sm text-gray-900 border border-gray-300 bg-gray-50 
-          focus:ring-blue-500 focus:border-blue-500 
-          dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white 
-          dark:focus:ring-blue-500 dark:focus:border-blue-500 rounded-4xl"
-            placeholder="Search"
-            required
-          />
+        <form className="relative flex mt-6 items-center boxShadow rounded-full ">
           {/* Search Icon */}
-          <div className="ps-3 pointer-events-none">
+          <div className="absolute left-0 ps-3 pointer-events-none">
             <svg
               className="w-4 h-4 text-gray-500 dark:text-gray-400"
               aria-hidden="true"
@@ -115,10 +104,22 @@ export default function page() {
               />
             </svg>
           </div>
+          {/* Search Input */}
+          <input
+            type="search"
+            id="default-search"
+            className="block px-8 py-4 text-sm text-gray-900 
+          focus:ring-blue-500 focus:border-blue-500 
+          dark:bg-gray-700  dark:placeholder-gray-400 dark:text-white 
+          dark:focus:ring-blue-500 dark:focus:border-blue-500 rounded-4xl"
+            placeholder="Search"
+            required
+          />
+
         </form>
       </div>
 
-      <div>
+      <div className="grid grid-cols-2 gap-5 shadow-md p-10 rounded-4xl">
         {faqs.map((faq, index) => (
           <Accordion
             type="single"
@@ -126,12 +127,12 @@ export default function page() {
             className="w-full"
             defaultValue="item-1"
           >
-            <AccordionItem value="item-2" key={index} className="mb-2">
-              <AccordionTrigger className="bg-primary-blue rounded-none rounded-t-3xl text-white px-5 text-3xl">
+            <AccordionItem value="item-2" key={index} className="mb-2 shadow-md rounded-3xl">
+              <AccordionTrigger className="bg-primary-red rounded-none rounded-t-3xl text-white px-5 text-3xl">
                 {faq.question}
               </AccordionTrigger>
 
-              <AccordionContent className="text-xl flex flex-col gap-4 text-balance bg-[#fdf8f2] text-gray-800 px-4 py-3">
+              <AccordionContent className="text-xl  text-balance text-gray-800 px-5 pt-3 pb-8">
                 {faq.answer}
               </AccordionContent>
             </AccordionItem>
