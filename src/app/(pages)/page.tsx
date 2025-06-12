@@ -271,7 +271,108 @@ export default function Home() {
 
           
         </div>
-      </article>    
+      </article>
+
+      {/*  faqs */}
+      <article>
+        <div className="container min-h-min max-w-8xl py-10 lg:py-20 px-4">
+          <div className="space-y-10 max-w-6xl m-auto text-center mb-10">
+            <h2 className="text-3xl lg:text-5xl xl:text-52 font-bold mb-5">
+            Got Questions? We've <br /><span className="primary-red">Got
+            Answers.</span>
+            </h2>
+          
+          </div>
+          <div className="grid lg:grid-cols-2 gap-8">
+            {
+              [
+              {
+                icon:"/icons/education-travel.png",
+                title:"Educational Travel Operations",
+                description:"Licensed to organize and facilitate structured learning experiences through travel, recognized by educational institutions and governing bodies."
+              },
+                {
+                icon:"/icons/tour-transportation.png",
+                title:"Tour and Transportation Services",
+                description:"Fully certified to provide domestic and international group travel logistics, ensuring safe and regulated transport across destinations."
+              },
+              {
+                icon:"/icons/education-travel.png",
+                title:"Educational Travel Operations",
+                description:"Licensed to organize and facilitate structured learning experiences through travel, recognized by educational institutions and governing bodies."
+              },
+                {
+                icon:"/icons/tour-transportation.png",
+                title:"Tour and Transportation Services",
+                description:"Fully certified to provide domestic and international group travel logistics, ensuring safe and regulated transport across destinations."
+              },
+              {
+                icon:"/icons/education-travel.png",
+                title:"Educational Travel Operations",
+                description:"Licensed to organize and facilitate structured learning experiences through travel, recognized by educational institutions and governing bodies."
+              },
+                {
+                icon:"/icons/tour-transportation.png",
+                title:"Tour and Transportation Services",
+                description:"Fully certified to provide domestic and international group travel logistics, ensuring safe and regulated transport across destinations."
+              },
+              {
+                icon:"/icons/education-travel.png",
+                title:"Educational Travel Operations",
+                description:"Licensed to organize and facilitate structured learning experiences through travel, recognized by educational institutions and governing bodies."
+              },
+                {
+                icon:"/icons/tour-transportation.png",
+                title:"Tour and Transportation Services",
+                description:"Fully certified to provide domestic and international group travel logistics, ensuring safe and regulated transport across destinations."
+              },
+            ].map(({icon,title,description},index)=>(
+                <Card key={index} className="min-h-24 px-12 flex items-center gap-y-4 gap-x-4 !rounded-3xl">
+                  
+                </Card>
+              ))
+            }
+
+          </div>
+
+          
+        </div>
+      </article>
+
+      {/*  Promotional videos */}
+      <article>
+        <div className="container min-h-min max-w-8xl py-10 lg:py-20 px-4">
+          <div className="space-y-10 max-w-6xl m-auto text-center mb-10">
+            <h2 className="text-3xl lg:text-5xl xl:text-52 font-bold mb-5">
+            Promotional <span className="primary-blue">videos</span>
+            </h2>
+          
+          </div>
+          <div className="grid lg:grid-cols-2 gap-8">
+            {
+              [
+                {
+                icon:"/icons/education-travel.png",
+                title:"Educational Travel Operations",
+                description:"Licensed to organize and facilitate structured learning experiences through travel, recognized by educational institutions and governing bodies."
+              },
+                {
+                icon:"/icons/tour-transportation.png",
+                title:"Tour and Transportation Services",
+                description:"Fully certified to provide domestic and international group travel logistics, ensuring safe and regulated transport across destinations."
+              }
+            ].map(({icon,title,description},index)=>(
+                <Card key={index} className="min-h-96 px-12 flex items-center gap-y-4 gap-x-4 !rounded-3xl">
+                  
+                </Card>
+              ))
+            }
+
+          </div>
+
+          
+        </div>
+      </article>   
     </>
   );
 }
