@@ -1,5 +1,5 @@
 import React from "react";
-import AboutUs from "@/components/cards/AboutUs";
+import DynamicCard from "@/components/cards/DynamicCard";
 export default function aboutus() {
   const data = [
     {
@@ -73,7 +73,7 @@ export default function aboutus() {
     <>
       {data.map((item, index) => (
         <article key={index}>
-          <AboutUs
+          <DynamicCard
             img={item.img}
             img_1={item.img_1}
             img_2={item.img_2}

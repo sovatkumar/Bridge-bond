@@ -2,20 +2,20 @@ import React from "react";
 import Image from "next/image";
 import { Card } from "../ui/card";
 
-type AboutUsProps = {
+type DynamicCardProps = {
   heading: string;
   description: string[];
-  paraHeading: string;
+  paraHeading: string | null;
   img: string;
-  img_1: string;
-  img_2: string;
-  img_3: string;
+  img_1: string | null;
+  img_2: string | null;
+  img_3: string | null;
   list: string[];
   className: { [key: string]: string };
   icon: string;
 };
 
-export default function AboutUs({
+export default function DynamicCard({
   heading,
   description,
   paraHeading,
@@ -26,7 +26,7 @@ export default function AboutUs({
   list,
   className,
   icon,
-}: AboutUsProps) {
+}: DynamicCardProps) {
   return (
     <Card
       className={`container ${className.mainCss} !my-20 lg:grid lg:grid-cols-2 !rounded-3xl overflow-hidden items-center md:items-start gap-x-12 p-10 border-0`}
