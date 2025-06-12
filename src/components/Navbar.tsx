@@ -7,13 +7,15 @@ function Navbar() {
     <nav>
       <div className="container py-10 px-4 flex justify-between items-center">
         <div className="logo-container">
-          <Image
-            src="/images/roam-n-learn-logo.png"
-            alt="Roam N Learn Logo"
-            width={250}
-            height={100}
-            priority
-          />
+          <Link href="/" className="nav-link">
+            <Image
+              src="/images/roam-n-learn-logo.png"
+              alt="Roam N Learn Logo"
+              width={250}
+              height={100}
+              priority
+            />
+          </Link>
         </div>
 
         <div className="nav-links">

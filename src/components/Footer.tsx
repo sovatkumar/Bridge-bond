@@ -13,14 +13,16 @@ export default function Footer() {
           {/* Company Info */}
           <div className="space-y-6 lg:border-r-1 lg:w-[90%]">
             <div>
-              <Image
-                className=""
-                src="/images/roam-footer-logo.png"
-                alt="Roam N Learn Logo"
-                width={118}
-                height={121}
-                priority
-              />
+              <Link href="/">
+                <Image
+                  className=""
+                  src="/images/roam-footer-logo.png"
+                  alt="Roam N Learn Logo"
+                  width={118}
+                  height={121}
+                  priority
+                />
+              </Link>
             </div>
             <p className="text-white text-base md:text-lg">
               Crafting Unforgettable Journeys With Purpose and Passion.
@@ -192,6 +194,6 @@ export default function Footer() {
           </div>
         </div>
       </div>
-    </footer>
+    </footer >
   );
 }

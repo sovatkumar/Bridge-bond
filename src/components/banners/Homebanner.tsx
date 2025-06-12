@@ -10,7 +10,7 @@ function HomeBanner() {
       <Card className="min-h-[700px] grid grid-cols-1 md:grid-cols-2 gap-8 !rounded-[2.5rem] md:items-center justify-around lightGradientColor border-0">
         {/* Left Column - Text Content */}
         <div className="space-y-6 lg:p-16 px-4">
-          <h1 className="text-3xl md:text-6xl xl:text-7xl font-bold leading-tight">
+          <h1 className="text-3xl md:text-6xl xl:text-7xl font-bold leading-tight text-center md:text-start">
             Fuel Your <br /> Curiosity. Let the
             <span className="primary-blue"> Journey Begin.</span>
           </h1>
@@ -26,8 +26,8 @@ function HomeBanner() {
 
         {/* Right Column - Image with Background */}
         <div className="relative w-full h-full">
-          <div className="absolute h-[684px] right-0 left-0 top-0 bottom-0 z-20 flex justify-center">
-            <div className="relative w-full max-w-[628px] h-full">
+          <div className="absolute md:h-[684px] right-0 left-0 top-0 bottom-0 z-20 flex justify-center">
+            <div className="relative w-full md:max-w-[628px] h-full">
               <Image
                 src="/images/home-banner.png"
                 alt="Travel Image"

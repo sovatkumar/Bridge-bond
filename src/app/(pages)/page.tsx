@@ -80,7 +80,7 @@ export default function Home() {
 
       {/* why choose Room and learn  */}
       <article>
-        <div className="min-h-screen container py-10 lg:py-20 px-4">
+        <div className="min-h-screen container py-10 lg:py-20 md:px-4">
           <div className="space-y-10 max-w-6xl m-auto text-center mb-10">
             <h2 className="text-3xl lg:text-5xl xl:text-[52px] font-bold mb-5">
               Why Choose <span className="primary-blue">Roam and Learn?</span>
@@ -97,7 +97,7 @@ export default function Home() {
       </article>
 
       {/* Feactured section  */}
-      <article className="min-h-min container py-20 px-4">
+      <article className="min-h-min container py-10 lg:py-20 md:px-4">
         <div className="md:grid grid-cols-2 gap-10">
           {/* Left Section: Promotional Message */}
           <div className="space-y-4 text-start">
@@ -122,7 +122,7 @@ export default function Home() {
           </div>
 
           {/* Right Section: Destination Cards Slider */}
-          <div className="relative ">
+          <div className="relative mt-6 md:mt-0">
             <Carousel
               opts={{
                 align: "start",
@@ -173,20 +173,17 @@ export default function Home() {
       </article>
 
       {/* Now in the station your next adventure */}
-      <article>
+      <article className="py-10 lg:py-20 md:px-4">
         <RegisterCard />
       </article>
 
       {/* why choose Us */}
       <article>
         <div className="container min-h-min max-w-8xl py-10 lg:py-20 px-4">
-          <div className="space-y-10 max-w-6xl m-auto text-center mb-10">
-            <h2 className="text-3xl lg:text-5xl xl:text-52 font-bold mb-5">
-              Why Choose <span className="primary-blue">Us?</span>
-            </h2>
-            <p>We&apos;re committed to providing the best experience for your child.</p>
-          </div>
-          <div className="grid grid-cols-2 gap-8">
+          <h2 className="text-3xl lg:text-5xl xl:text-52 font-bold mb-5 md:mb-8 text-center">
+            Why Choose <span className="primary-yellow">Us?</span>
+          </h2>
+          <div className="grid md:grid-cols-2 gap-5 md:gap-8">
             {
               [
                 {
@@ -220,7 +217,7 @@ export default function Home() {
                   description: "Each student is covered under a comprehensive travel insurance plan for added peace of mind."
                 },
               ].map(({ icon, title, description }, index) => (
-                <Card key={index} className="px-12 flex flex-row items-start gap-x-4 !rounded-3xl">
+                <Card key={index} className="lg:px-12 md:px-8 px-4 flex flex-row items-start gap-x-4 !rounded-3xl">
                   <div className="flex-shrink-0"><Image src={icon} alt={title} height={60} width={60} className="object-cover" /></div>
                   <div className="flex-1">
                     <h4 className="font-medium text-2xl">{title}</h4>
@@ -231,7 +228,6 @@ export default function Home() {
             }
 
           </div>
-
 
         </div>
       </article>
@@ -245,7 +241,7 @@ export default function Home() {
             </h2>
 
           </div>
-          <div className="grid grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
             {
               [
                 {
@@ -264,7 +260,7 @@ export default function Home() {
                   description: "Approved to conduct cultural immersion, language learning, and field-study programs with verified partner institutions and guides."
                 },
               ].map(({ icon, title, description }, index) => (
-                <Card key={index} className="px-12 flex items-center gap-y-4 gap-x-4 !rounded-3xl">
+                <Card key={index} className="lg:px-12 md:px-8 px-4 flex items-center gap-y-4 gap-x-4 !rounded-3xl border-none">
                   <div className="flex-shrink-0"><Image src={icon} alt={title} height={80} width={80} /></div>
                   <div className="flex-1 text-center space-y-4">
                     <h4 className="font-medium text-2xl">{title}</h4>
