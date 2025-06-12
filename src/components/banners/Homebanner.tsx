@@ -7,12 +7,12 @@ import {
 function HomeBanner() {
   return (
     <>
-      <Card className="min-h-[700px] grid grid-cols-1 md:grid-cols-2 gap-8 !rounded-[2.5rem] items-center justify-around lightGradientColor border-0">
+      <Card className="min-h-[700px] grid grid-cols-1 md:grid-cols-2 gap-8 !rounded-[2.5rem] md:items-center justify-around lightGradientColor border-0">
         {/* Left Column - Text Content */}
-        <div className="space-y-6 p-16">
+        <div className="space-y-6 lg:p-16 px-4">
           <h1 className="text-3xl md:text-6xl xl:text-7xl font-bold leading-tight">
             Fuel Your <br /> Curiosity. Let the
-            <span className="primary-blue">Journey Begin.</span>
+            <span className="primary-blue"> Journey Begin.</span>
           </h1>
           <p className="text-base md:text-lg max-w-md">
             With roam n learn, every trip&apos;s a new story full of epic sights, big

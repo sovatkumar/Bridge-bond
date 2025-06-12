@@ -13,6 +13,13 @@ import { Button } from "@/components/ui/button";
 import Homebanner from "../../components/banners/Homebanner";
 import RegisterCard from "@/components/cards/RegisterCard";
 import { MoveRight } from 'lucide-react';
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+
 
 export default function Home() {
   const destinations = [
@@ -27,7 +34,7 @@ export default function Home() {
     },
     {
       id: 2,
-      image: "/images/taj-mahal.png",
+      image: "/images/waterdestination.png",
       alt: "Maldives",
       tourType: "6 Day Tour",
       name: "Bharat Darshan",
@@ -75,7 +82,7 @@ export default function Home() {
       <article>
         <div className="min-h-screen container py-10 lg:py-20 px-4">
           <div className="space-y-10 max-w-6xl m-auto text-center mb-10">
-            <h2 className="text-3xl lg:text-5xl xl:text-52 font-bold mb-5">
+            <h2 className="text-3xl lg:text-5xl xl:text-[52px] font-bold mb-5">
               Why Choose <span className="primary-blue">Roam and Learn?</span>
             </h2>
             <p className="text-lg lg:text-2xl">
@@ -109,7 +116,8 @@ export default function Home() {
               the adventure, we'll show you the sale.
             </p>
             <Button className="!rounded-3xl mt-6 px-8 py-4 bg-red-500 text-white shadow-md hover:bg-red-600 transition-colors">
-              See All
+              <Link href="/destinations"> See All</Link>
+
             </Button>
           </div>
 
@@ -166,7 +174,7 @@ export default function Home() {
 
       {/* Now in the station your next adventure */}
       <article>
-        <RegisterCard/>
+        <RegisterCard />
       </article>
 
       {/* why choose Us */}
@@ -182,38 +190,38 @@ export default function Home() {
             {
               [
                 {
-                icon:"/icons/safety.png",
-                title:"Safety is Our 1st Priority",
-                description:"All tours are carefully planned with safety protocols in place. We partner only with licensed, insured service providers and have 24/7 emergency response teams."
-              },
+                  icon: "/icons/safety.png",
+                  title: "Safety is Our 1st Priority",
+                  description: "All tours are carefully planned with safety protocols in place. We partner only with licensed, insured service providers and have 24/7 emergency response teams."
+                },
                 {
-                icon:"/icons/cell-phone.png",
-                title:"Regular Parent Updates",
-                description:"We keep you informed throughout the trip with real-time updates, messages, and photos so you always know where your child is and what they're doing."
-              },
+                  icon: "/icons/cell-phone.png",
+                  title: "Regular Parent Updates",
+                  description: "We keep you informed throughout the trip with real-time updates, messages, and photos so you always know where your child is and what they're doing."
+                },
                 {
-                icon:"/icons/health-medical-support.png",
-                title:"Health & Medical Support",
-                description:"We're prepared for any health-related needs, with access to medical professionals, first aid, and immediate support if required"
-              },
+                  icon: "/icons/health-medical-support.png",
+                  title: "Health & Medical Support",
+                  description: "We're prepared for any health-related needs, with access to medical professionals, first aid, and immediate support if required"
+                },
                 {
-                icon:"/icons/age-appropriate.png",
-                title:"Curated, Age-Appropriate Itineraries",
-                description:"Every destination and activity is chosen with student interests and safety in mind—engaging, enriching, and 100% age-appropriate."
-              },
+                  icon: "/icons/age-appropriate.png",
+                  title: "Curated, Age-Appropriate Itineraries",
+                  description: "Every destination and activity is chosen with student interests and safety in mind—engaging, enriching, and 100% age-appropriate."
+                },
                 {
-                icon:"/icons/transparent-communication.png",
-                title:"Transparent Communication",
-                description:"No surprises. Parents receive complete tour plans, safety procedures, and emergency contact information well in advance."
-              },
+                  icon: "/icons/transparent-communication.png",
+                  title: "Transparent Communication",
+                  description: "No surprises. Parents receive complete tour plans, safety procedures, and emergency contact information well in advance."
+                },
                 {
-                icon:"/icons/insurance-coverage.png",
-                title:"Insurance Coverage",
-                description:"Each student is covered under a comprehensive travel insurance plan for added peace of mind."
-              },
-            ].map(({icon,title,description},index)=>(
+                  icon: "/icons/insurance-coverage.png",
+                  title: "Insurance Coverage",
+                  description: "Each student is covered under a comprehensive travel insurance plan for added peace of mind."
+                },
+              ].map(({ icon, title, description }, index) => (
                 <Card key={index} className="px-12 flex flex-row items-start gap-x-4 !rounded-3xl">
-                  <div className="flex-shrink-0"><Image src={icon} alt={title} height={60} width={60} className="object-cover"/></div>
+                  <div className="flex-shrink-0"><Image src={icon} alt={title} height={60} width={60} className="object-cover" /></div>
                   <div className="flex-1">
                     <h4 className="font-medium text-2xl">{title}</h4>
                     <p className="text-lg">{description}</p>
@@ -224,7 +232,7 @@ export default function Home() {
 
           </div>
 
-          
+
         </div>
       </article>
 
@@ -235,41 +243,41 @@ export default function Home() {
             <h2 className="text-3xl lg:text-5xl xl:text-52 font-bold mb-5">
               Our <span className="primary-blue">Licenses</span>
             </h2>
-          
+
           </div>
           <div className="grid grid-cols-3 gap-8">
             {
               [
                 {
-                icon:"/icons/education-travel.png",
-                title:"Educational Travel Operations",
-                description:"Licensed to organize and facilitate structured learning experiences through travel, recognized by educational institutions and governing bodies."
-              },
+                  icon: "/icons/education-travel.png",
+                  title: "Educational Travel Operations",
+                  description: "Licensed to organize and facilitate structured learning experiences through travel, recognized by educational institutions and governing bodies."
+                },
                 {
-                icon:"/icons/tour-transportation.png",
-                title:"Tour and Transportation Services",
-                description:"Fully certified to provide domestic and international group travel logistics, ensuring safe and regulated transport across destinations."
-              },
+                  icon: "/icons/tour-transportation.png",
+                  title: "Tour and Transportation Services",
+                  description: "Fully certified to provide domestic and international group travel logistics, ensuring safe and regulated transport across destinations."
+                },
                 {
-                icon:"/icons/culture.png",
-                title:"Cultural Exchange & Study Programs",
-                description:"Approved to conduct cultural immersion, language learning, and field-study programs with verified partner institutions and guides."
-              },
-            ].map(({icon,title,description},index)=>(
+                  icon: "/icons/culture.png",
+                  title: "Cultural Exchange & Study Programs",
+                  description: "Approved to conduct cultural immersion, language learning, and field-study programs with verified partner institutions and guides."
+                },
+              ].map(({ icon, title, description }, index) => (
                 <Card key={index} className="px-12 flex items-center gap-y-4 gap-x-4 !rounded-3xl">
-                  <div className="flex-shrink-0"><Image src={icon} alt={title} height={80} width={80}/></div>
+                  <div className="flex-shrink-0"><Image src={icon} alt={title} height={80} width={80} /></div>
                   <div className="flex-1 text-center space-y-4">
                     <h4 className="font-medium text-2xl">{title}</h4>
                     <p className="text-lg">{description}</p>
                   </div>
-                  <Link href={"/"} className="text-2xl primary-red text-center flex items-center gap-x-2"><MoveRight/> View itinerary</Link>
+                  <Link href={"/"} className="text-2xl primary-red text-center flex items-center gap-x-2"><MoveRight /> View itinerary</Link>
                 </Card>
               ))
             }
 
           </div>
 
-          
+
         </div>
       </article>
 
@@ -278,64 +286,79 @@ export default function Home() {
         <div className="container min-h-min max-w-8xl py-10 lg:py-20 px-4">
           <div className="space-y-10 max-w-6xl m-auto text-center mb-10">
             <h2 className="text-3xl lg:text-5xl xl:text-52 font-bold mb-5">
-            Got Questions? We've <br /><span className="primary-red">Got
-            Answers.</span>
+              Got Questions? We've <br /><span className="primary-red">Got
+                Answers.</span>
             </h2>
-          
+
           </div>
-          <div className="grid lg:grid-cols-2 gap-8">
+          <div className="grid lg:grid-cols-2 gap-5">
             {
               [
-              {
-                icon:"/icons/education-travel.png",
-                title:"Educational Travel Operations",
-                description:"Licensed to organize and facilitate structured learning experiences through travel, recognized by educational institutions and governing bodies."
-              },
                 {
-                icon:"/icons/tour-transportation.png",
-                title:"Tour and Transportation Services",
-                description:"Fully certified to provide domestic and international group travel logistics, ensuring safe and regulated transport across destinations."
-              },
-              {
-                icon:"/icons/education-travel.png",
-                title:"Educational Travel Operations",
-                description:"Licensed to organize and facilitate structured learning experiences through travel, recognized by educational institutions and governing bodies."
-              },
+                  icon: "/icons/education-travel.png",
+                  title: "What is Roam N Learn?",
+                  description: "Roam N Learn offers curated travel experiences that combine exploration with skill-building, cultural immersion, and learning opportunities. It's where adventure meets personal growth."
+                },
                 {
-                icon:"/icons/tour-transportation.png",
-                title:"Tour and Transportation Services",
-                description:"Fully certified to provide domestic and international group travel logistics, ensuring safe and regulated transport across destinations."
-              },
-              {
-                icon:"/icons/education-travel.png",
-                title:"Educational Travel Operations",
-                description:"Licensed to organize and facilitate structured learning experiences through travel, recognized by educational institutions and governing bodies."
-              },
+                  icon: "/icons/tour-transportation.png",
+                  title: "Do you offer international trips?",
+                  description: "Fully certified to provide domestic and international group travel logistics, ensuring safe and regulated transport across destinations."
+                },
                 {
-                icon:"/icons/tour-transportation.png",
-                title:"Tour and Transportation Services",
-                description:"Fully certified to provide domestic and international group travel logistics, ensuring safe and regulated transport across destinations."
-              },
-              {
-                icon:"/icons/education-travel.png",
-                title:"Educational Travel Operations",
-                description:"Licensed to organize and facilitate structured learning experiences through travel, recognized by educational institutions and governing bodies."
-              },
+                  icon: "/icons/education-travel.png",
+                  title: "Who can join the programs?",
+                  description: "Licensed to organize and facilitate structured learning experiences through travel, recognized by educational institutions and governing bodies."
+                },
                 {
-                icon:"/icons/tour-transportation.png",
-                title:"Tour and Transportation Services",
-                description:"Fully certified to provide domestic and international group travel logistics, ensuring safe and regulated transport across destinations."
-              },
-            ].map(({icon,title,description},index)=>(
-                <Card key={index} className="min-h-24 px-12 flex items-center gap-y-4 gap-x-4 !rounded-3xl">
-                  
-                </Card>
+                  icon: "/icons/tour-transportation.png",
+                  title: "How can I book a trip?",
+                  description: "Fully certified to provide domestic and international group travel logistics, ensuring safe and regulated transport across destinations."
+                },
+                {
+                  icon: "/icons/education-travel.png",
+                  title: "What kind of learning experiences do you offer?",
+                  description: "Licensed to organize and facilitate structured learning experiences through travel, recognized by educational institutions and governing bodies."
+                },
+                {
+                  icon: "/icons/tour-transportation.png",
+                  title: "What’s included in the trip package?",
+                  description: "Fully certified to provide domestic and international group travel logistics, ensuring safe and regulated transport across destinations."
+                },
+                {
+                  icon: "/icons/education-travel.png",
+                  title: "Are the trips guided?",
+                  description: "Licensed to organize and facilitate structured learning experiences through travel, recognized by educational institutions and governing bodies."
+                },
+                {
+                  icon: "/icons/tour-transportation.png",
+                  title: "Is it safe to travel with Roam N Learn?",
+                  description: "Fully certified to provide domestic and international group travel logistics, ensuring safe and regulated transport across destinations."
+                },
+              ].map(({ icon, title, description }, index) => (
+
+                <Accordion
+                  type="single"
+                  collapsible
+                  className="w-full"
+                  defaultValue="item-1"
+                >
+                  <AccordionItem value="item-2" key={index} className="mb-4 shadow-md rounded-2xl border border-red-300 transition-shadow redBoxShadow">
+                    <AccordionTrigger className="px-3 md:px-5 text-lg md:text-xl xl:text-2xl hover:no-underline">
+                      {title}
+
+                    </AccordionTrigger>
+
+                    <AccordionContent className="text-base md:text-lg text-gray-800 px-5 pb-8">
+                      {description}
+                    </AccordionContent>
+                  </AccordionItem>
+                </Accordion>
+
               ))
             }
 
           </div>
 
-          
         </div>
       </article>
 
@@ -344,35 +367,35 @@ export default function Home() {
         <div className="container min-h-min max-w-8xl py-10 lg:py-20 px-4">
           <div className="space-y-10 max-w-6xl m-auto text-center mb-10">
             <h2 className="text-3xl lg:text-5xl xl:text-52 font-bold mb-5">
-            Promotional <span className="primary-blue">videos</span>
+              Promotional <span className="primary-blue">videos</span>
             </h2>
-          
+
           </div>
           <div className="grid lg:grid-cols-2 gap-8">
             {
               [
                 {
-                icon:"/icons/education-travel.png",
-                title:"Educational Travel Operations",
-                description:"Licensed to organize and facilitate structured learning experiences through travel, recognized by educational institutions and governing bodies."
-              },
+                  icon: "/icons/education-travel.png",
+                  title: "Educational Travel Operations",
+                  description: "Licensed to organize and facilitate structured learning experiences through travel, recognized by educational institutions and governing bodies."
+                },
                 {
-                icon:"/icons/tour-transportation.png",
-                title:"Tour and Transportation Services",
-                description:"Fully certified to provide domestic and international group travel logistics, ensuring safe and regulated transport across destinations."
-              }
-            ].map(({icon,title,description},index)=>(
+                  icon: "/icons/tour-transportation.png",
+                  title: "Tour and Transportation Services",
+                  description: "Fully certified to provide domestic and international group travel logistics, ensuring safe and regulated transport across destinations."
+                }
+              ].map(({ icon, title, description }, index) => (
                 <Card key={index} className="min-h-96 px-12 flex items-center gap-y-4 gap-x-4 !rounded-3xl">
-                  
+
                 </Card>
               ))
             }
 
           </div>
 
-          
+
         </div>
-      </article>   
+      </article>
     </>
   );
 }

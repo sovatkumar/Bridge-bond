@@ -238,7 +238,6 @@ body {
   );
 }
 
-
 /* text colors  */
 .primary-red {
   color: #f04042;
@@ -269,6 +268,9 @@ body {
 }
 .boxShadow {
   box-shadow: 4px 4px 24px 0px rgba(0, 174, 165, 0.12);
+}
+.redBoxShadow {
+  box-shadow: 4px 4px 24px 0 rgba(240, 64, 66, 0.16);
 }
 h1,
 h2,
