@@ -97,7 +97,7 @@ export default function page() {
   };
 
   return (
-    <div className='container py-20 lg:px-4'>
+    <div className='container py-10 lg:py-20 md:px-4'>
       <div className="grid grid-cols-1 md:grid-cols-3 justify-center gap-10">
         {contacts.map((card, index) => (
           <Card key={index} className="!gap-4 text-center shadow-sm boxShadow border-none">

@@ -80,8 +80,8 @@ export default function page() {
     },
   ];
   return (
-    <div className="container py-20">
-      <div className="flex m-auto justify-between pb-10">
+    <div className="container py-10 lg:py-20 md:px-4">
+      <div className="md:flex m-auto justify-between pb-10">
         <h1 className="text-4xl lg:text-6xl">
           Top frequently asked <span className="primary-blue">questions</span>
         </h1>
@@ -119,7 +119,7 @@ export default function page() {
         </form>
       </div>
 
-      <div className="grid grid-cols-2 gap-5 shadow-md p-10 rounded-4xl">
+      <div className="md:grid grid-cols-2 gap-5 shadow-md p-7 md:p-10 rounded-4xl">
         {faqs.map((faq, index) => (
           <Accordion
             type="single"
@@ -127,12 +127,12 @@ export default function page() {
             className="w-full"
             defaultValue="item-1"
           >
-            <AccordionItem value="item-2" key={index} className="mb-2 shadow-md rounded-3xl">
-              <AccordionTrigger className="bg-primary-red rounded-none rounded-t-3xl text-white px-5 text-3xl">
+            <AccordionItem value="item-2" key={index} className="mb-4 shadow-md rounded-3xl">
+              <AccordionTrigger className="bg-primary-red rounded-none rounded-t-3xl text-white px-3 md:px-5 text-xl md:2xl xl:text-3xl">
                 {faq.question}
               </AccordionTrigger>
 
-              <AccordionContent className="text-xl  text-balance text-gray-800 px-5 pt-3 pb-8">
+              <AccordionContent className="text-base md:text-xl text-balance text-gray-800 px-5 pt-3 pb-8">
                 {faq.answer}
               </AccordionContent>
             </AccordionItem>

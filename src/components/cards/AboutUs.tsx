@@ -39,23 +39,23 @@ export default function AboutUs({ heading, description, paraHeading, img, img_1,
                         {paraHeading}
                     </h4>
 
-                    <ul className={`text-lg lg:text-xl ${className.text} space-y-2 leading-relaxed`}>
+                    <ul className={`text-lg lg:text-xl ${className.text} space-y-5 leading-relaxed`}>
                         {list.map((item, index) => (
                             <li key={index}
                                 className='flex gap-2 items-start'>
                                 <Image
-                                    width={30}
-                                    height={30}
+                                    width={28}
+                                    height={28}
                                     src={`/icons/${icon}`}
                                     alt="list-icon"
-                                    className="object-contain pt-2"
+                                    className="object-contain pt-2 md:pt-1"
                                 />{item}</li>
                         ))}
                     </ul>
                 </div>
             </div>
-            <div className="w-full md:w-1/2">
-                <div className='pl-10'>
+            <div className="w-full md:w-1/2 pt-10 md:pt-0">
+                <div className="lg:pl-10">
                     {img && (
                         <Image
                             width={558}
@@ -66,8 +66,8 @@ export default function AboutUs({ heading, description, paraHeading, img, img_1,
                         />
                     )}
                 </div>
-                <div className=" flex gap-5 w-full">
-                    <div className='flex flex-col gap-5'>
+                <div className="flex md:gap-5 gap-3 w-full">
+                    <div className="flex flex-col md:gap-5 gap-3">
                         {img_1 && (
                             <Image
                                 width={267}

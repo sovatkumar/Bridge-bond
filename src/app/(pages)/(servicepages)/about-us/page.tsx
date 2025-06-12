@@ -36,7 +36,7 @@ export default function aboutus() {
         img_3: "",
         list: [],
         className: {
-            mainCss: "flex-row-reverse blueBackgroundGradientColor rounded-4xl",
+            mainCss: "flex-row-reverse blueBackgroundGradientColor rounded-4xl px-4",
             heading: "text-white pt-5",
             text: "text-white lg:w-[85%]",
             paraHeading: ""

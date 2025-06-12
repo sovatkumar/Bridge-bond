@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <footer className="relative w-full footerGradientColor bg-cover bg-center">
       <div className="absolute inset-0"></div>
-      <div className="container mx-auto px-4 pt-16 pb-5 relative z-10">
+      <div className="container mx-auto md:px-4 pt-16 pb-5 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Company Info */}
           <div className="space-y-6 lg:border-r-1 lg:w-[90%]">
