@@ -18,7 +18,7 @@ type AboutUsProps = {
 
 export default function AboutUs({ heading, description, paraHeading, img, img_1, img_2, img_3, list, className, icon }: AboutUsProps) {
     return (
-        <div className={`container ${className.mainCss} md:flex py-20 px-4 items-center md:items-start gap-12`} >
+        <div className={`container ${className.mainCss} md:flex py-10 lg:py-20 lg:px-4 items-center md:items-start gap-12`} >
 
             {/* Text Content */}
             <div className="md:w-1/2 w-full flex flex-col gap-y-6">
@@ -29,7 +29,7 @@ export default function AboutUs({ heading, description, paraHeading, img, img_1,
                     {description && (
                         <div>
                             {description.map((description, index) => (<p key={index}
-                                className={`text-lg lg:text-2xl ${className.text} leading-relaxed`}>
+                                className={`text-lg lg:text-xl ${className.text} leading-normal`}>
                                 {description}
                             </p>))}
                         </div>
@@ -39,7 +39,7 @@ export default function AboutUs({ heading, description, paraHeading, img, img_1,
                         {paraHeading}
                     </h4>
 
-                    <ul className={`text-lg lg:text-2xl ${className.text} space-y-2 leading-relaxed`}>
+                    <ul className={`text-lg lg:text-xl ${className.text} space-y-2 leading-relaxed`}>
                         {list.map((item, index) => (
                             <li key={index}
                                 className='flex gap-2 items-start'>
