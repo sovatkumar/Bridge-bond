@@ -144,7 +144,6 @@ body {
 
 /* Navigation styles */
 
-
 .nav-links {
   display: flex;
   gap: 2rem;
@@ -228,6 +227,19 @@ body {
     rgba(255, 249, 226, 1) 100%
   );
 }
+
+.pinkBackGradientColor {
+  /* background: #fac2c3; */
+  background: linear-gradient(
+    90deg,
+    rgba(250, 194, 195, 1) 0%,
+    rgba(250, 194, 195, 0.5) 50%,
+    rgba(250, 194, 195, 0.017) 100%
+  );
+}
+
+
+/* text colors  */
 .primary-red {
   color: #f04042;
 }
@@ -269,7 +281,7 @@ h6 {
 
 @layer utilities {
   /* max width  */
-  .max-w-8xl{
+  .max-w-8xl {
     max-width: 88rem !important;
   }
 

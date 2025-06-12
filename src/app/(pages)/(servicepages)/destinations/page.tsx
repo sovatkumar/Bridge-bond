@@ -86,7 +86,7 @@ function Destionation() {
             ))}
           </div>
           <div className="text-center">
-            <Button className="m-auto bg-primary-red text-white px-6 py-2.5">See more</Button>
+            <Button size={"lg"} className="px-6 !py-4 !rounded-3xl m-auto bg-primary-red text-white ">See more</Button>
           </div>
         </div>
       </article>
