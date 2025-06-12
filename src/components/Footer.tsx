@@ -8,8 +8,8 @@ export default function Footer() {
   return (
     <footer className="relative w-full footerGradientColor bg-cover bg-center">
       <div className="absolute inset-0"></div>
-      <div className="container mx-auto md:px-4 pt-16 pb-5 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+      <div className="container mx-auto px-4 pt-16 pb-5 relative z-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-2 gap-x-12">
           {/* Company Info */}
           <div className="space-y-6 lg:border-r-1 lg:w-[90%]">
             <div>
@@ -30,8 +30,8 @@ export default function Footer() {
           </div>
 
           {/* Quick Links */}
-          <div className="space-y-4 lg:border-r-1">
-            <ul className="space-y-4 text-lg md:text-xl">
+          <div className="lg:border-r-1">
+            <ul className="space-y-2 lg:space-y-4 text-sm md:text-xl">
               <li>
                 <Link
                   href="/about"
@@ -70,7 +70,7 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div className="space-y-6 lg:border-r-1">
-            <ul className="space-y-4 text-lg md:text-xl">
+            <ul className="space-y-2 lg:space-y-4 text-sm md:text-xl">
               <li>
                 <Link
                   href="/help"
@@ -116,7 +116,7 @@ export default function Footer() {
 
           {/* Newsletter */}
           <div className="space-y-6">
-            <ul className="space-y-4 text-lg md:text-xl">
+            <ul className="space-y-2 lg:space-y-4 text-sm md:text-xl">
               <li>
                 <Link
                   href="/resources"
@@ -162,7 +162,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="mt-16 pt-8 border-t border-gray-200">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <p className="text-gray-100 text-lg md:text-xl">
+            <p className="text-gray-100 text-sm md:text-xl">
               © Roam n Learn 2025. All rights reserved.
             </p>
             <div className="flex space-x-5">

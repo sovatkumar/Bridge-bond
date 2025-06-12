@@ -7,7 +7,7 @@ function Destionation() {
     <>
       {/*  Promotional videos */}
       <article>
-        <div className="container min-h-min max-w-8xl py-10 lg:py-20 px-4 space-y-10">
+        <div className="container  min-h-min max-w-8xl py-10 lg:py-20 space-y-10">
           <div className="space-y-10 max-w-6xl m-auto text-center mb-10">
             <h2 className="text-3xl lg:text-5xl xl:text-52 font-bold mb-5">
               Top <span className="primary-red">Destinations</span>

@@ -7,13 +7,13 @@ function Destionation() {
     <>
       {/*  Promotional videos */}
       <article>
-        <div className="container min-h-min max-w-8xl py-10 lg:py-20 px-4 space-y-10">
+        <div className="container min-h-min max-w-8xl py-10 lg:py-20 lg:px-4 space-y-10">
           <div className=" max-w-6xl m-auto text-center mb-10">
             <h2 className="text-3xl lg:text-5xl xl:text-52 font-bold mb-5">
               Top <span className="primary-red">Destinations</span>
             </h2>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
             <Card
               className="min-h-80 px-12 flex flex-col items-center justify-end !rounded-3xl"
               style={{
@@ -22,7 +22,7 @@ function Destionation() {
                 backgroundPosition: "center",
               }}
             ></Card>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
               <Card
                 className="min-h-80 px-12 !rounded-3xl"
                 style={{
@@ -40,7 +40,7 @@ function Destionation() {
                 }}
               ></Card>
               <Card
-                className="col-span-2 min-h-80 px-12 flex flex-col items-end justify-end !rounded-3xl"
+                className="lg:col-span-2 min-h-80 px-12 flex flex-col items-center lg:items-end justify-end !rounded-3xl"
                 style={{
                   backgroundImage: `url('/destinations/img6.png')`,
                   backgroundSize: "cover",
@@ -61,7 +61,7 @@ function Destionation() {
       {/* Be Responsible  */}
       <article>
         <Card
-          className={`container redBackgroundGradientColor !my-20 lg:grid lg:grid-cols-2 items-center !rounded-3xl overflow-hidden  gap-x-12 p-10 border-0`}
+          className={`container redBackgroundGradientColor !my-20 lg:grid lg:grid-cols-2 items-center !rounded-3xl overflow-hidden gap-x-12 lg:p-10 border-0`}
         >
           <div>
             <Image
@@ -73,14 +73,14 @@ function Destionation() {
             />
           </div>
           {/* Text Content */}
-          <div className="w-full p-10 text-white">
-            <div className="space-y-10">
+          <div className="w-full p-4 lg:p-10 text-white">
+            <div className="space-y-4 lg:space-y-10">
               <h2
                 className={`text-3xl md:text-4xl lg:text-6xl font-bold text-white`}
               >
                 Our Story
               </h2>
-              <div className="text-white space-y-2 text-xl">
+              <div className="text-white space-y-2 text-sm lg:text-xl">
                 <p>
                   It all started with a simple idea: what if learning could be
                   fun—and happen anywhere in the world?
@@ -104,17 +104,17 @@ function Destionation() {
       {/* Stay Safe */}
       <article>
         <Card
-          className={`container !my-20 lg:grid lg:grid-cols-2 items-center !rounded-3xl overflow-hidden gap-x-12 p-10 border-0`}
+          className={`container !my-20 lg:grid lg:grid-cols-2 items-center !rounded-3xl overflow-hidden gap-x-12 lg:p-10 border-0`}
         >
           
           {/* Text Content */}
-          <div className="w-full p-10">
-            <div className="space-y-10">
+          <div className="order-2 lg:order-1 w-full p-4 lg:p-10">
+            <div className="space-y-4 lg:space-y-10">
               <h2 className={`text-3xl md:text-4xl lg:text-6xl font-bold`}>
               Meet <span className="primary-blue">The Team</span>
               </h2>
 
-              <div className="text-xl space-y-2">
+              <div className="text-sm lg:text-xl space-y-2">
                 <p>We’re a small but mighty crew of travel pros, safety experts, and youth leaders who care deeply about student experiences. We plan every detail, guide every step, and keep the energy high (and the fun even higher).</p>
                 <p>We’re here to help you roam safely, confidently—and with a lot of stories to tell when you get back.</p>
               </div>
@@ -122,7 +122,7 @@ function Destionation() {
             </div>
           </div>
           {/* Image contain  */}
-          <div>
+          <div className="order-1 lg:order-2 ">
             <Image
               width={558}
               height={300}

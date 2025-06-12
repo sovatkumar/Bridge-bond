@@ -29,13 +29,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Navbar />
+      
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <Navbar />
+        <main className="min-h-[80vh] !px-4 lg:!px-0">
+          {children}
+        </main>
+        <Footer />
       </body>
-      <Footer />
+      
     </html>
   );
 }

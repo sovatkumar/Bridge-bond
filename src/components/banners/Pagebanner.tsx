@@ -17,7 +17,7 @@ type PageBannerProps = {
 function Pagebanner({ title }: PageBannerProps) {
   return (
     <Card className="container pb-0 relative h-full bg-no-repeat bg-center bg-cover border-0 overflow-hidden !rounded-[2.5rem] pinkBackGradientColor pt-10 z-10 md:grid grid-cols-1 md:grid-cols-7 gap-x-8">
-      <div className="col-span-2 relative w-full h-[300px] md:h-[400px]">
+      <div className="hidden lg:block col-span-2 relative w-full h-[300px] md:h-[400px]">
         <Image
           src="/images/bags.png"
           alt="Station Adventure"

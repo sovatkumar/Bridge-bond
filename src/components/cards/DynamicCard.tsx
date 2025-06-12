@@ -29,10 +29,10 @@ export default function DynamicCard({
 }: DynamicCardProps) {
   return (
     <Card
-      className={`container ${className.mainCss} !my-20 lg:grid lg:grid-cols-2 !rounded-3xl overflow-hidden items-center md:items-start gap-x-12 p-10 border-0`}
+      className={`container ${className.mainCss} !my-20 grid grid-cols-1 lg:grid-cols-2 !rounded-3xl overflow-hidden items-center md:items-start gap-x-12 p-4 lg:p-10 border-0`}
     >
       {/* Text Content */}
-      <div className="roder-2 lg:order-1 w-full flex flex-col gap-y-6 p-10">
+      <div className="order-2 lg:order-1 w-full flex flex-col gap-y-6  lg:p-10">
         <div className="space-y-5">
           <h2
             className={`text-3xl md:text-4xl lg:text-6xl font-bold ${className.heading}`}
@@ -44,7 +44,7 @@ export default function DynamicCard({
               {description.map((description, index) => (
                 <p
                   key={index}
-                  className={`text-lg lg:text-xl ${className.text} leading-normal`}
+                  className={`text-sm lg:text-xl ${className.text} leading-normal`}
                 >
                   {description}
                 </p>
@@ -95,7 +95,7 @@ export default function DynamicCard({
       {img_1 && img_2 && img_3 && (
         <div className="order-1 lg:order-2 h-full w-full grid grid-cols-2 grid-rows-2 gap-5 relative">
           {img_1 && (
-            <div className="relative h-full w-full rounded-3xl overflow-hidden">
+            <div className="relative min-h-48 h-full w-full rounded-3xl overflow-hidden">
               <Image
                 src={`/images/${img_1}`}
                 alt="Main Interaction"

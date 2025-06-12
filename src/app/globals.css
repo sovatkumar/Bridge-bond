@@ -138,8 +138,12 @@ body {
 }
 
 .container {
-  max-width: 90% !important;
-  margin: 0 auto;
+  max-width: 100% !important;
+  margin: auto !important;
+  @media (min-width: 768px) {
+    max-width: 90% !important;
+    margin: auto !important;
+  }
 }
 
 /* Navigation styles */

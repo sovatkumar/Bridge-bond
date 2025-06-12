@@ -4,8 +4,9 @@ import Link from "next/link";
 
 function Navbar() {
   return (
-    <nav>
-      <div className="container py-10 px-4 flex justify-between items-center">
+    <>
+    <nav className={"hidden lg:block"}>
+      <div className="container py-10 px-4 lg:flex justify-between items-center">
         <div className="logo-container">
           <Link href="/" className="nav-link">
             <Image
@@ -45,6 +46,24 @@ function Navbar() {
         </div>
       </div>
     </nav>
+    {/* Mobile  */}
+    <nav >
+      <div className="container lg:hidden py-10 px-4 flex justify-between items-center">
+        <div className="logo-container">
+          <Link href="/" className="nav-link">
+            <Image
+              src="/images/roam-n-learn-logo.png"
+              alt="Roam N Learn Logo"
+              width={150}
+              height={60}
+              priority
+            />
+          </Link>
+        </div>
+
+      </div>
+    </nav>
+    </>
   );
 }
 
