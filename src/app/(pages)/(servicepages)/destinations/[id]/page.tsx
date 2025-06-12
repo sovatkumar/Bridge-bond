@@ -21,9 +21,7 @@ function Destionation() {
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
-            >
-            
-            </Card>
+            ></Card>
             <div className="grid grid-cols-2 gap-4">
               <Card
                 className="min-h-80 px-12 !rounded-3xl"
@@ -32,9 +30,7 @@ function Destionation() {
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}
-              >
-               
-              </Card>
+              ></Card>
               <Card
                 className="min-h-80 px-12 !rounded-3xl"
                 style={{
@@ -42,9 +38,7 @@ function Destionation() {
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}
-              >
-               
-              </Card>
+              ></Card>
               <Card
                 className="col-span-2 min-h-80 px-12 flex flex-col items-end justify-end !rounded-3xl"
                 style={{
@@ -53,14 +47,91 @@ function Destionation() {
                   backgroundPosition: "center",
                 }}
               >
-                <Button size={"lg"} className="text-center text-white bg-primary-yellow !rounded-3xl">
-                  
+                <Button
+                  size={"lg"}
+                  className="text-center text-white bg-primary-yellow !rounded-3xl"
+                >
                   See more
                 </Button>
               </Card>
             </div>
           </div>
         </div>
+      </article>
+      {/* Be Responsible  */}
+      <article>
+        <Card
+          className={`container redBackgroundGradientColor !my-20 lg:grid lg:grid-cols-2 items-center !rounded-3xl overflow-hidden  gap-x-12 p-10 border-0`}
+        >
+          <div>
+            <Image
+              width={558}
+              height={300}
+              src={`/images/respect-everyone.png`}
+              alt="Main Interaction"
+              className="rounded-3xl w-full object-cover"
+            />
+          </div>
+          {/* Text Content */}
+          <div className="w-full p-10 text-white">
+            <div className="space-y-10">
+              <h2
+                className={`text-3xl md:text-4xl lg:text-6xl font-bold text-white`}
+              >
+                Our Story
+              </h2>
+              <div className="text-white space-y-2 text-xl">
+                <p>
+                  It all started with a simple idea: what if learning could be
+                  fun—and happen anywhere in the world?
+                </p>
+                <p>
+                  We’re a group of travel lovers, youth mentors, and adventure
+                  seekers who believe the best kind of learning happens when
+                  you're out there living it. That’s why we created Roam and
+                  Learn—to give students the chance to travel, explore new
+                  cultures, and learn through real-world experiences.
+                </p>
+                <p>
+                  Every trip we plan is built from that same spark: travel with
+                  purpose, led by passion.
+                </p>
+              </div>
+            </div>
+          </div>
+        </Card>
+      </article>
+      {/* Stay Safe */}
+      <article>
+        <Card
+          className={`container !my-20 lg:grid lg:grid-cols-2 items-center !rounded-3xl overflow-hidden gap-x-12 p-10 border-0`}
+        >
+          
+          {/* Text Content */}
+          <div className="w-full p-10">
+            <div className="space-y-10">
+              <h2 className={`text-3xl md:text-4xl lg:text-6xl font-bold`}>
+              Meet <span className="primary-blue">The Team</span>
+              </h2>
+
+              <div className="text-xl space-y-2">
+                <p>We’re a small but mighty crew of travel pros, safety experts, and youth leaders who care deeply about student experiences. We plan every detail, guide every step, and keep the energy high (and the fun even higher).</p>
+                <p>We’re here to help you roam safely, confidently—and with a lot of stories to tell when you get back.</p>
+              </div>
+              <h3 className="text-2xl primary-red">Ready to explore? Let’s go!</h3>
+            </div>
+          </div>
+          {/* Image contain  */}
+          <div>
+            <Image
+              width={558}
+              height={300}
+              src={`/images/respect-everyone.png`}
+              alt="Main Interaction"
+              className="rounded-3xl w-full object-cover"
+            />
+          </div>
+        </Card>
       </article>
       {/*  Promotional videos */}
       <article>

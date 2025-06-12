@@ -1,6 +1,7 @@
 import React from "react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 function Destionation() {
   return (
     <>
@@ -69,8 +70,9 @@ function Destionation() {
                 expiryDate: "Valid on Jun 12, 2025",
               },
             ].map(({ imgUrl, tourTimeLine, title, expiryDate }, index) => (
+              <Link key={index} href={`/destinations/${index+1}`}>
               <Card
-                key={index}
+                
                 className="min-h-80 px-12 flex flex-col items-center justify-end !rounded-3xl"
                 style={{
                   backgroundImage: `url(${imgUrl})`,
@@ -83,6 +85,7 @@ function Destionation() {
                   <p>{expiryDate}</p>
                 </div>
               </Card>
+              </Link>
             ))}
           </div>
           <div className="text-center">
