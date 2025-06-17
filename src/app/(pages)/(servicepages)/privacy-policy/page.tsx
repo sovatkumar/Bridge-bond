@@ -86,7 +86,7 @@ export default function page() {
                 <article>
                     <div>
                         <h1 className="text-2xl md:text-4xl py-5">
-                            2. How We Use <span className="primary-blue">Your Information</span>
+                            2. How We Use <span className="primary-red">Your Information</span>
                         </h1>
                         <p className="text-lg md:text-2xl pb-5 leading-normal lg:leading-9">
                             Your data helps us provide a seamless and personalised experience.
@@ -112,7 +112,7 @@ export default function page() {
                 <article>
                     <div>
                         <h1 className="text-2xl md:text-4xl py-5">
-                            3. Sharing Your <span className="primary-yellow">Information</span>
+                            3. Sharing Your <span className="primary-red">Information</span>
                         </h1>
                         <p className="text-lg md:text-2xl pb-4 leading-normal lg:leading-9">
                             We only share your data when necessary and with trusted partners:
@@ -169,7 +169,7 @@ export default function page() {
                 <article>
                     <div>
                         <h1 className="text-2xl md:text-4xl py-5">
-                            5. Your Rights and <span className="primary-blue">Choices</span>
+                            5. Your Rights and <span className="primary-red">Choices</span>
                         </h1>
                         <p className="text-lg md:text-2xl pb-5 leading-normal lg:leading-9">
                             You have control over your personal information. You can:
@@ -198,7 +198,7 @@ export default function page() {
                 <article>
                     <div>
                         <h1 className="text-2xl md:text-4xl py-5">
-                            6. Cookies and Tracking <span className="primary-yellow">Technologies</span>
+                            6. Cookies and Tracking <span className="primary-red">Technologies</span>
                         </h1>
                         <p className="text-lg md:text-2xl pb-4 leading-normal lg:leading-9">
                             Our website uses cookies to enhance user experience, gather
@@ -231,7 +231,7 @@ export default function page() {
                 <article>
                     <div>
                         <h1 className="text-2xl md:text-4xl py-5">
-                            8. Updates to <span className="primary-blue">This Policy</span>
+                            8. Updates to <span className="primary-red">This Policy</span>
                         </h1>
                         <p className="text-lg md:text-2xl pb-4 leading-normal lg:leading-9">
                             We may update this Privacy Policy from time to time. If we make
@@ -247,7 +247,7 @@ export default function page() {
                 <article>
                     <div>
                         <h1 className="text-2xl md:text-4xl py-5">
-                            9. Contact <span className="primary-yellow">Us</span>
+                            9. Contact <span className="primary-red">Us</span>
                         </h1>
                         <p className="text-lg md:text-2xl pb-5 leading-normal lg:leading-9">
                             Have questions or concerns about your privacy? Feel free to reach

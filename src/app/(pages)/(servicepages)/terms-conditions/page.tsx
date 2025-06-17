@@ -26,7 +26,7 @@ export default function page() {
 
             </div>
             <div className="py-5">
-                <h4 className="text-2xl md:text-3xl primary-blue  pb-2">
+                <h4 className="text-2xl md:text-3xl primary-red pb-2">
                     STOP Information
                 </h4>
                 <p className="text-base md:text-lg lg:text-xl leading-normal">
@@ -35,7 +35,7 @@ export default function page() {
                 </p>
             </div>
             <div className="py-5">
-                <h4 className="text-2xl md:text-3xl primary-blue pb-2">
+                <h4 className="text-2xl md:text-3xl primary-red pb-2">
                     HELP Information
                 </h4>
                 <p className="text-base md:text-lg lg:text-xl leading-normal pb-1">

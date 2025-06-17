@@ -1,7 +1,9 @@
 import React from "react";
 import { Card } from "@/components/ui/card";
 import Image from "next/image";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
+
 function Destionation() {
   return (
     <>
@@ -58,81 +60,6 @@ function Destionation() {
           </div>
         </div>
       </article>
-      {/* Be Responsible  */}
-      <article>
-        <Card
-          className={`container redBackgroundGradientColor !my-20 lg:grid lg:grid-cols-2 items-center !rounded-3xl overflow-hidden gap-x-12 lg:p-10 border-0`}
-        >
-          <div>
-            <Image
-              width={558}
-              height={300}
-              src={`/images/respect-everyone.png`}
-              alt="Main Interaction"
-              className="rounded-3xl w-full object-cover"
-            />
-          </div>
-          {/* Text Content */}
-          <div className="w-full p-4 lg:p-10 text-white">
-            <div className="space-y-4 lg:space-y-10">
-              <h2
-                className={`text-3xl md:text-4xl lg:text-6xl font-bold text-white`}
-              >
-                Our Story
-              </h2>
-              <div className="text-white space-y-2 text-sm lg:text-xl">
-                <p>
-                  It all started with a simple idea: what if learning could be
-                  fun—and happen anywhere in the world?
-                </p>
-                <p>
-                  We’re a group of travel lovers, youth mentors, and adventure
-                  seekers who believe the best kind of learning happens when
-                  you're out there living it. That’s why we created Roam and
-                  Learn—to give students the chance to travel, explore new
-                  cultures, and learn through real-world experiences.
-                </p>
-                <p>
-                  Every trip we plan is built from that same spark: travel with
-                  purpose, led by passion.
-                </p>
-              </div>
-            </div>
-          </div>
-        </Card>
-      </article>
-      {/* Stay Safe */}
-      <article>
-        <Card
-          className={`container !my-20 lg:grid lg:grid-cols-2 items-center !rounded-3xl overflow-hidden gap-x-12 lg:p-10 border-0`}
-        >
-          
-          {/* Text Content */}
-          <div className="order-2 lg:order-1 w-full p-4 lg:p-10">
-            <div className="space-y-4 lg:space-y-10">
-              <h2 className={`text-3xl md:text-4xl lg:text-6xl font-bold`}>
-              Meet <span className="primary-blue">The Team</span>
-              </h2>
-
-              <div className="text-sm lg:text-xl space-y-2">
-                <p>We’re a small but mighty crew of travel pros, safety experts, and youth leaders who care deeply about student experiences. We plan every detail, guide every step, and keep the energy high (and the fun even higher).</p>
-                <p>We’re here to help you roam safely, confidently—and with a lot of stories to tell when you get back.</p>
-              </div>
-              <h3 className="text-2xl primary-red">Ready to explore? Let’s go!</h3>
-            </div>
-          </div>
-          {/* Image contain  */}
-          <div className="order-1 lg:order-2 ">
-            <Image
-              width={558}
-              height={300}
-              src={`/images/respect-everyone.png`}
-              alt="Main Interaction"
-              className="rounded-3xl w-full object-cover"
-            />
-          </div>
-        </Card>
-      </article>
       {/*  Promotional videos */}
       <article>
         <div className="container min-h-min max-w-8xl py-10 lg:py-20 px-4">
@@ -168,7 +95,7 @@ function Destionation() {
                 key={index}
                 className="min-h-60 px-4 flex flex-col items-center justify-center !rounded-3xl"
               >
-                <div className="p-2 bg-primary-red rounded-xl">
+                <div className="p-2 bg-primary-blue rounded-xl">
                   <Image
                     src={icon}
                     alt={icon}
@@ -188,6 +115,89 @@ function Destionation() {
           </div>
         </div>
       </article>
+      {/* Stay Safe */}
+      <article>
+        <Card
+          className={"container bg-[url('/images/home-banner-background.png')] bg-no-repeat bg-cover z-10 !my-20 lg:grid lg:grid-cols-2 items-center !rounded-3xl overflow-hidden gap-x-12 lg:p-10 border-0"}
+        >
+
+          {/* Text Content */}
+          <div className="order-2 lg:order-1 w-full p-4 lg:p-10">
+            <div className="space-y-4 lg:space-y-10 text-white">
+              <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold">
+                Trip Overview
+              </h2>
+
+              <div className="text-sm lg:text-xl space-y-2">
+                <p>We’re a small but mighty crew of travel pros, safety experts, and youth leaders who care deeply about student experiences. We plan every detail, guide every step, and keep the energy high (and the fun even higher).</p>
+                <p>We’re here to help you roam safely, confidently—and with a lot of stories to tell when you get back.</p>
+              </div>
+              <Button className="!rounded-3xl mt-6 px-8 py-4 primary-red bg-white shadow-md transition-colors">
+                <Link href="#">READY TO ROAM?</Link>
+              </Button>
+            </div>
+          </div>
+          {/* Image contain  */}
+          <div className="order-1 lg:order-2 ">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {[
+                {
+                  icon: "/icons/destination-icon.png",
+                  tourTimeLine: "Days:",
+                  expiryDate: "6 Days",
+                },
+                {
+                  icon: "/icons/calender-icon.png",
+                  tourTimeLine: "Accommodation:",
+                  expiryDate: "3 Hostels, 2 nights in Travel",
+                },
+                {
+                  icon: "/icons/review-icon.png",
+                  tourTimeLine: "Meals:",
+                  expiryDate: "6 Breakfasts, 6 Dinners",
+                },
+                {
+                  icon: "/icons/price-icon.png",
+                  tourTimeLine: "Transport",
+                  expiryDate: "Coach",
+                },
+                {
+                  icon: "/icons/review-icon.png",
+                  tourTimeLine: "Group Size",
+                  expiryDate: "Average 20 students",
+                },
+                {
+                  icon: "/icons/price-icon.png",
+                  tourTimeLine: "Crew",
+                  expiryDate: "Expert Trip Manager, Driver Team, Local Guides",
+                }
+              ].map(({ icon, tourTimeLine, expiryDate }, index) => (
+                <Card
+                  key={index}
+                  className="min-h-60 px-4 flex flex-col items-center justify-center !rounded-3xl"
+                >
+                  <div className="p-2 bg-primary-red rounded-xl">
+                    <Image
+                      src={icon}
+                      alt={icon}
+                      width={50}
+                      height={50}
+                      className="object-contain"
+                    />
+                  </div>
+                  <div className="text-center">
+                    <h6 className="text-lg lg:text-xl">{tourTimeLine}</h6>
+                    <p className="text-sm lg:text-lg text-gray-700">
+                      {expiryDate}
+                    </p>
+                  </div>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </Card>
+      </article>
+
     </>
   );
 }

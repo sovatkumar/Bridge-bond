@@ -268,7 +268,7 @@ export default function Home() {
         <Card className="relative h-full bg-no-repeat bg-center bg-cover rounded-4xl bg-[url('/images/red-yellow-background.png')] py-10 px-5 lg:!p-16 z-10 grid grid-cols-1 md:grid-cols-3 gap-8 ">
           {/* Left Section: Promotional Message */}
           <div className="space-y-4 text-start col-span-1">
-            <h2 className="text-4xl lg:text-5xl xl:text-[52px] 2xl:text-[70px] font-bold text-white">
+            <h2 className="text-4xl lg:text-5xl xl:text-[52px] 2xl:text-[60px] font-bold text-white">
               Feedback from Our Learners
             </h2>
             <p className="text-base lg:text-lg 2xl:text-xl text-white">
@@ -282,21 +282,21 @@ export default function Home() {
           </div>
 
           {/* Right Section: Destination Cards Slider */}
-          <div className="relative mt-6 md:mt-0 col-span-2">
+          <div className="relative col-span-2">
             <Carousel
               opts={{
                 align: "start",
               }}
               className="w-full"
             >
-              <CarouselContent className="-ml-6 w-full">
+              <CarouselContent className="-ml-4 md:-ml-6 w-full">
                 {feedback.map((feedback) => (
                   <CarouselItem
                     key={feedback.id}
-                    className="pl-6 w-full md:w-1/2"
+                    className="pl-6 w-full lg:w-1/2"
                   >
                     <div className="p-1 h-full">
-                      <Card className="h-full shadow-lg overflow-hidden rounded-2xl bg-white">
+                      <Card className="h-full shadow-lg overflow-hidden rounded-2xl bg-white !py-0">
                         <div className="w-full p-6 flex flex-col justify-between h-full gap-y-4 text-center">
                           <Image
                             src={feedback.image}
@@ -305,10 +305,10 @@ export default function Home() {
                             height={28}
                             className="mx-auto"
                           />
-                          <p className="text-base lg:text-lg text-gray-800">
+                          <p className="text-sm md:text-base 2xl:text-lg text-gray-800">
                             {feedback.para}
                           </p>
-                          <h3 className="text-base lg:text-lg font-bold mt-1 text-[#F04042]">
+                          <h3 className="text-sm md:text-base 2xl:text-lg font-bold mt-1 text-[#F04042]">
                             {feedback.name},{" "}
                             <span className="font-normal text-black">
                               {" "}
@@ -322,7 +322,7 @@ export default function Home() {
                 ))}
               </CarouselContent>
               <CarouselPrevious className="absolute left-5 -bottom-12 md:-bottom-15 -translate-y-1/2 border-none !bg-transparent text-white hover:text-white" />
-              <CarouselNext className="absolute left-20 -bottom-12 md:-bottom-15  -translate-y-1/2 border-none !bg-transparent text-white hover:text-white" />
+              <CarouselNext className="absolute left-20 -bottom-12 md:-bottom-15 -translate-y-1/2 border-none !bg-transparent text-white hover:text-white" />
             </Carousel>
           </div>
         </Card>
@@ -399,7 +399,7 @@ export default function Home() {
                     </span>
                   </AccordionTrigger>
 
-                  <AccordionContent className="text-base md:text-lg text-gray-800 px-5 pb-8">
+                  <AccordionContent className="text-base md:text-lg text-gray-800 px-3 md:px-5 pb-8">
                     {description}
                   </AccordionContent>
                 </AccordionItem>

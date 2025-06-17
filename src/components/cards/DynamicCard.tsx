@@ -29,7 +29,7 @@ export default function DynamicCard({
 }: DynamicCardProps) {
   return (
     <Card
-      className={`container ${className.mainCss} !my-20 grid lg:grid-cols-2 !rounded-3xl overflow-hidden items-center md:items-start gap-x-8 xl:gap-x-12 md:p-10 p-4 border-0`}
+      className={`container ${className.mainCss} !my-20 grid lg:grid-cols-2 !rounded-3xl overflow-hidden items-center md:items-start gap-x-8 xl:gap-x-12 md:p-10 p-4 2xl:p-16 border-0`}
     >
       {/* Text Content */}
       <div className="order-2 lg:order-1 w-full flex flex-col gap-y-6 2xl:py-10">

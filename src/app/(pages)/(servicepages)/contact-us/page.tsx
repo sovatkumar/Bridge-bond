@@ -46,7 +46,7 @@ export default function page() {
       title: "Call us free",
       content: (
         <>
-          <a href="tel:+911234567890" className="primary-blue font-medium block text-base lg:text-lg 2xl:text-2xl">
+          <a href="tel:+911234567890" className="primary-red font-medium block text-base lg:text-lg 2xl:text-2xl">
             +91 1234567890
           </a>
           <p className="text-base 2xl:text-xl text-black">Or message us on Whatsapp</p>
@@ -63,7 +63,7 @@ export default function page() {
           </p>
           <a
             href="https://facebook.com/Roamnlearn"
-            className="primary-blue font-medium block mt-1 text-base lg:text-lg 2xl:text-2xl"
+            className="primary-red font-medium block mt-1 text-base lg:text-lg 2xl:text-2xl"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -101,7 +101,7 @@ export default function page() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-10">
         {contacts.map((card, index) => (
           <Card key={index} className="!gap-4 text-center shadow-sm boxShadow border-none !rounded-3xl">
-            <div className="flex justify-center bg-primary-red m-auto text-white p-4 rounded-full md:mb-4 border-none" >{card.icon}</div>
+            <div className="flex justify-center bg-primary-blue m-auto text-white p-4 rounded-full md:mb-4 border-none" >{card.icon}</div>
             <CardHeader>
               <CardTitle className="text-lg md:text-2xl xl:text-3xl 2xl:text-4xl">{card.title}</CardTitle>
             </CardHeader>
@@ -109,9 +109,9 @@ export default function page() {
           </Card>
         ))}
       </div>
-      <div className="container flex flex-col lg:justify-self-center py-20">
+      <div className="container flex flex-col lg:justify-self-center gap-3 py-20">
         <p className="text-center text-2xl md:text-3xl">Still not sorted</p>
-        <h2 className="text-center text-4xl lg:text-6xl pb-10">Drop us <span className='primary-red'>a line</span></h2>
+        <h2 className="text-center text-4xl lg:text-6xl pb-8">Drop us <span className='primary-red'>a line</span></h2>
         <Select>
           <SelectTrigger className="w-full 2xl:w-[80%] flex self-center">
             <SelectValue placeholder="Select category*" />

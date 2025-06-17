@@ -83,7 +83,7 @@ export default function page() {
     <div className="container py-10 lg:py-20 md:px-4">
       <div className="md:flex m-auto justify-between pb-10">
         <h1 className="text-4xl lg:text-6xl">
-          Top frequently asked <span className="primary-blue">questions</span>
+          Top frequently asked <span className="primary-red">questions</span>
         </h1>
         <form className="relative flex mt-6 items-center boxShadow rounded-full ">
           {/* Search Icon */}

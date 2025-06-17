@@ -41,9 +41,9 @@ export default function aboutus() {
       list: [],
       className: {
         mainCss:
-          "flex-row-reverse blueBackgroundGradientColor rounded-4xl px-4",
+          "flex-row-reverse  bg-[url('/images/home-banner-background.png')] bg-no-repeat bg-cover rounded-4xl px-4",
         heading: "text-white",
-        text: "text-white xl:w-[85%]",
+        text: "text-white xl:w-[90%]",
         paraHeading: "",
       },
       icon: "",

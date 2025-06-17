@@ -2,6 +2,8 @@ import React from "react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import RegisterCard from "@/components/cards/RegisterCard";
+
 function Destionation() {
   return (
     <>
@@ -70,21 +72,21 @@ function Destionation() {
                 expiryDate: "Valid on Jun 12, 2025",
               },
             ].map(({ imgUrl, tourTimeLine, title, expiryDate }, index) => (
-              <Link key={index} href={`/destinations/${index+1}`}>
-              <Card
-                
-                className="min-h-80 px-12 flex flex-col items-center justify-end !rounded-3xl"
-                style={{
-                  backgroundImage: `url(${imgUrl})`,
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center'
-                }}>
-                <div className="text-center text-white">
-                  <h6 className="text-lg">{tourTimeLine}</h6>
-                  <h5 className="text-3xl font-semibold">{title}</h5>
-                  <p>{expiryDate}</p>
-                </div>
-              </Card>
+              <Link key={index} href={`/destinations/${index + 1}`}>
+                <Card
+
+                  className="min-h-80 px-12 flex flex-col items-center justify-end !rounded-3xl"
+                  style={{
+                    backgroundImage: `url(${imgUrl})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center'
+                  }}>
+                  <div className="text-center text-white">
+                    <h6 className="text-lg">{tourTimeLine}</h6>
+                    <h5 className="text-3xl font-semibold">{title}</h5>
+                    <p>{expiryDate}</p>
+                  </div>
+                </Card>
               </Link>
             ))}
           </div>
@@ -92,6 +94,9 @@ function Destionation() {
             <Button size={"lg"} className="px-6 !py-4 !rounded-3xl m-auto bg-primary-red text-white ">See more</Button>
           </div>
         </div>
+      </article>
+      <article className="py-10 lg:py-20 md:px-4">
+        <RegisterCard />
       </article>
     </>
   );
