@@ -16,8 +16,8 @@ type PageBannerProps = {
 
 function Pagebanner({ title }: PageBannerProps) {
   return (
-    <Card className="container pb-0 relative h-full bg-no-repeat bg-center bg-cover border-0 overflow-hidden !rounded-[2.5rem] pinkBackGradientColor pt-10 z-10 md:grid grid-cols-1 md:grid-cols-7 gap-x-8">
-      <div className="hidden lg:block col-span-2 relative w-full h-[300px] md:h-[400px]">
+    <Card className="container !pb-0 relative h-full bg-no-repeat bg-center bg-cover border-0 overflow-hidden !rounded-[2.5rem] pinkBackGradientColor pt-10 z-10 md:grid grid-cols-1 md:grid-cols-7 gap-x-8">
+      <div className="hidden lg:flex col-span-2 relative w-full 2xl:h-[400px]">
         <Image
           src="/images/bags.png"
           alt="Station Adventure"
@@ -27,37 +27,37 @@ function Pagebanner({ title }: PageBannerProps) {
 
         />
       </div>
-      <CardContent className="col-span-3 flex flex-col justify-start gap-y-4 md:px-16 md:py-12 text-center">
-        <h2 className="text-3xl md:text-4xl lg:text-6xl xl:text-7xl font-bold leading-tight">
+      <CardContent className="col-span-3 flex flex-col justify-start md:gap-y-2 xl:gap-y-4 md:!px-0 2xl:px-16 2xl:py-12 text-center">
+        <h2 className="text-3xl md:text-5xl xl:text-6xl 2xl:text-7xl font-bold leading-tight">
           Destinations
         </h2>
         <Breadcrumb className="flex items-center justify-center">
           <BreadcrumbList>
             <BreadcrumbItem>
-              <BreadcrumbLink href="/" className="text-base md:!text-xl">
+              <BreadcrumbLink href="/" className="text-base xl:!text-lg">
                 Home
               </BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
-              <BreadcrumbLink href="/components" className="text-base md:!text-xl">
+              <BreadcrumbLink href="/components" className="text-base xl:!text-lg">
                 Components
               </BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
-              <BreadcrumbPage className="text-lg md:!text-2xl">Breadcrumb</BreadcrumbPage>
+              <BreadcrumbPage className="text-lg md:!text-xl">Breadcrumb</BreadcrumbPage>
             </BreadcrumbItem>
           </BreadcrumbList>
         </Breadcrumb>
-        <p className="text-base lg:text-lg">
+        <p className="text-sm lg:text-base xl:text-lg leading-normal">
           At Roam N Learn, each destination is more than just a place on the map
           — it’s a living classroom. Our carefully curated educational tours are
           designed to immerse learners in real-world experiences that connect
           culture, history, science, and personal growth.
         </p>
       </CardContent>
-      <div className="col-span-2 relative w-full h-[300px] md:h-[400px]">
+      <div className="col-span-2 relative w-full 2xl:h-[400px]">
         <Image
           src="/images/girl-with-bag.png"
           alt="Station Adventure"

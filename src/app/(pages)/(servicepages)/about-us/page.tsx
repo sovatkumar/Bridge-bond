@@ -42,8 +42,8 @@ export default function aboutus() {
       className: {
         mainCss:
           "flex-row-reverse blueBackgroundGradientColor rounded-4xl px-4",
-        heading: "text-white pt-5",
-        text: "text-white lg:w-[85%]",
+        heading: "text-white",
+        text: "text-white xl:w-[85%]",
         paraHeading: "",
       },
       icon: "",

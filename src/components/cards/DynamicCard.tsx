@@ -29,13 +29,13 @@ export default function DynamicCard({
 }: DynamicCardProps) {
   return (
     <Card
-      className={`container ${className.mainCss} !my-20 grid grid-cols-1 lg:grid-cols-2 !rounded-3xl overflow-hidden items-center md:items-start gap-x-12 p-4 lg:p-10 border-0`}
+      className={`container ${className.mainCss} !my-20 grid lg:grid-cols-2 !rounded-3xl overflow-hidden items-center md:items-start gap-x-8 xl:gap-x-12 md:p-10 p-4 border-0`}
     >
       {/* Text Content */}
-      <div className="order-2 lg:order-1 w-full flex flex-col gap-y-6  lg:p-10">
-        <div className="space-y-5">
+      <div className="order-2 lg:order-1 w-full flex flex-col gap-y-6 2xl:py-10">
+        <div className="space-y-3 lg:space-x-5">
           <h2
-            className={`text-3xl md:text-4xl lg:text-6xl font-bold ${className.heading}`}
+            className={`text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold ${className.heading}`}
           >
             {heading}
           </h2>
@@ -44,7 +44,7 @@ export default function DynamicCard({
               {description.map((description, index) => (
                 <p
                   key={index}
-                  className={`text-sm lg:text-xl ${className.text} leading-normal`}
+                  className={`text-base md:text-lg xl:text-xl ${className.text} leading-normal`}
                 >
                   {description}
                 </p>
@@ -53,7 +53,7 @@ export default function DynamicCard({
           )}
           {paraHeading && (
             <h4
-              className={`text-2xl md:text-3xl lg:text-4xl font-bold ${className.paraHeading}`}
+              className={`text-2xl md:text-3xl xl:text-4xl font-bold ${className.paraHeading}`}
             >
               {paraHeading}
             </h4>
@@ -61,7 +61,7 @@ export default function DynamicCard({
 
           {list && (
             <ul
-              className={`text-lg lg:text-xl ${className.text} space-y-5 leading-relaxed`}
+              className={`text-base md:text-lg xl:text-xl ${className.text} space-y-3 md:space-y-5 leading-relaxed`}
             >
               {list?.map((item, index) => (
                 <li key={index} className="flex gap-2 items-start">
@@ -81,7 +81,7 @@ export default function DynamicCard({
       </div>
 
       {img && (
-        <div className="order-1 lg:order-2">
+        <div className="">
           <Image
             width={558}
             height={374}
@@ -93,9 +93,9 @@ export default function DynamicCard({
       )}
 
       {img_1 && img_2 && img_3 && (
-        <div className="order-1 lg:order-2 h-full w-full grid grid-cols-2 grid-rows-2 gap-5 relative">
+        <div className="order-1 lg:order-2 h-full w-full grid grid-cols-2 grid-rows-2 gap-3 md:gap-5">
           {img_1 && (
-            <div className="relative min-h-48 h-full w-full rounded-3xl overflow-hidden">
+            <div className="relative min-h-48 h-full w-full rounded-2xl overflow-hidden">
               <Image
                 src={`/images/${img_1}`}
                 alt="Main Interaction"
@@ -106,7 +106,7 @@ export default function DynamicCard({
           )}
 
           {img_2 && (
-            <div className="row-span-2 relative h-full rounded-3xl overflow-hidden">
+            <div className="relative row-span-2 h-full rounded-2xl overflow-hidden">
               <Image
                 src={`/images/${img_2}`}
                 alt="Secondary Interaction"
@@ -117,7 +117,7 @@ export default function DynamicCard({
           )}
 
           {img_3 && (
-            <div className="relative h-full w-full rounded-3xl overflow-hidden">
+            <div className="relative h-full w-full rounded-2xl overflow-hidden">
               <Image
                 src={`/images/${img_3}`}
                 alt="Tertiary Interaction"

@@ -6,192 +6,119 @@ import { RiLinkedinFill } from "react-icons/ri";
 
 export default function Footer() {
   return (
-    <footer className="relative w-full footerGradientColor bg-cover bg-center">
-      <div className="absolute inset-0"></div>
+    <footer className="relative w-full  bg-[url('/images/footer-background.png')] bg-no-repeat bg-cover bg-center z-10">
       <div className="container mx-auto px-4 pt-16 pb-5 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-2 gap-x-12">
+        <div className="grid grid-cols-1 gap-3 lg:justify-self-center">
           {/* Company Info */}
-          <div className="space-y-6 lg:border-r-1 lg:w-[90%]">
-            <div>
+          <div className="space-y-6 lg:text-center">
+            <div className="flex lg:justify-self-center">
               <Link href="/">
                 <Image
                   className=""
                   src="/images/roam-footer-logo.png"
                   alt="Roam N Learn Logo"
-                  width={118}
-                  height={121}
+                  width={253}
+                  height={42}
                   priority
                 />
               </Link>
             </div>
             <p className="text-white text-base md:text-lg">
-              Crafting Unforgettable Journeys With Purpose and Passion.
+              Crafting Unforgettable Journeys With <br />Purpose and Passion.
             </p>
           </div>
 
           {/* Quick Links */}
-          <div className="lg:border-r-1">
-            <ul className="space-y-2 lg:space-y-4 text-sm md:text-xl">
-              <li>
-                <Link
-                  href="/about"
-                  className="text-gray-100 hover:text-white transition-colors"
-                >
-                  About Roam n Learn
-                </Link>
-              </li>
+          <div className="">
+            <ul className="flex flex-col lg:flex-row md:gap-3 gap-y-1 text-sm md:text-xl">
               <li>
                 <Link
                   href="/about-us"
-                  className="text-gray-100 hover:text-white transition-colors"
+                  className="text-white text-base lg:text-lg transition-colors"
                 >
                   About Us
                 </Link>
               </li>
+              <span className="md:border-r-2"></span>
               <li>
                 <Link
                   href="/news-letter"
-                  className="text-gray-100 hover:text-white transition-colors"
+                  className="text-white text-base lg:text-lg transition-colors"
                 >
                   News Letters
                 </Link>
               </li>
-              <li>
-                <Link
-                  href="/code-of-conduct"
-                  className="text-gray-100 hover:text-white transition-colors"
-                >
-                  Code Of Conduct
-                </Link>
-              </li>
-
-            </ul>
-          </div>
-
-          {/* Contact Info */}
-          <div className="space-y-6 lg:border-r-1">
-            <ul className="space-y-2 lg:space-y-4 text-sm md:text-xl">
-              <li>
-                <Link
-                  href="/help"
-                  className="text-gray-100 hover:text-white transition-colors"
-                >
-                  Help
-                </Link>
-              </li>
+              <span className="border-r-2"></span>
               <li>
                 <Link
                   href="/contact-us"
-                  className="text-gray-100 hover:text-white transition-colors"
+                  className="text-white text-base lg:text-lg transition-colors"
                 >
                   Contact Us
                 </Link>
               </li>
-              <li>
-                <Link
-                  href="/faqs"
-                  className="text-gray-100 hover:text-white transition-colors"
-                >
-                  FAQ
-                </Link>
-              </li>
+              <span className="border-r-2"></span>
               <li>
                 <Link
                   href="/terms-conditions"
-                  className="text-gray-100 hover:text-white transition-colors"
+                  className="text-white text-base lg:text-lg transition-colors"
                 >
                   Terms & Conditions
                 </Link>
               </li>
+              <span className="border-r-2"></span>
               <li>
                 <Link
                   href="/privacy-policy"
-                  className="text-gray-100 hover:text-white transition-colors"
+                  className="text-white text-base lg:text-lg transition-colors"
                 >
                   Privacy & Policies
                 </Link>
               </li>
+              <span className="border-r-2"></span>
+              <li>
+                <Link
+                  href="/code-of-conduct"
+                  className="text-white text-base lg:text-lg transition-colors"
+                >
+                  Code Of Conduct
+                </Link>
+              </li>
             </ul>
           </div>
-
-          {/* Newsletter */}
-          <div className="space-y-6">
-            <ul className="space-y-2 lg:space-y-4 text-sm md:text-xl">
-              <li>
-                <Link
-                  href="/resources"
-                  className="text-gray-100 hover:text-white transition-colors"
-                >
-                  Resources
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/careers"
-                  className="text-gray-100 hover:text-white transition-colors"
-                >
-                  Careers
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/download-brochure"
-                  className="text-gray-100 hover:text-white transition-colors"
-                >
-                  Download Brochure
-                </Link>
-              </li>
-
-            </ul>
-            {/* <form className="space-y-4">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="w-full px-4 py-2 rounded-lg bg-white/10 border border-gray-600 text-white placeholder-gray-400 focus:outline-none focus:border-white"
-              />
-              <button
-                type="submit"
-                className="w-full px-6 py-2 bg-white text-black rounded-lg font-semibold hover:bg-gray-100 transition-colors"
-              >
-                Subscribe
-              </button>
-            </form> */}
+          <div className="flex space-x-5 mt-5 lg:justify-self-center">
+            <Link
+              href="/youtube"
+              className="text-gray-100 h-10 w-10 flex items-center rounded-full p-2 hover:text-white text-sm transition-colors bg-primary-red justify-center"
+            >
+              <FaYoutube className="size-5 md:size-7" />
+            </Link>
+            <Link
+              href="/terms"
+              className="text-gray-100 h-10 w-10 flex items-center rounded-full p-2 hover:text-white text-sm transition-colors bg-primary-red justify-center"
+            >
+              <FaFacebookF className="size-5 md:size-7" />
+            </Link>
+            <Link
+              href="/cookies"
+              className="text-gray-100 h-10 w-10 flex items-center rounded-full p-2 hover:text-white text-sm transition-colors bg-primary-red justify-center"
+            >
+              <PiInstagramLogoFill className="size-5 md:size-7" />
+            </Link>
+            <Link
+              href="/cookies"
+              className="text-gray-100 h-10 w-10 flex items-center rounded-full p-2 hover:text-white text-sm transition-colors bg-primary-red justify-center"
+            >
+              <RiLinkedinFill className="size-5 md:size-7" />
+            </Link>
           </div>
         </div>
 
         {/* Bottom Bar */}
         <div className="mt-16 pt-8 border-t border-gray-200">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <p className="text-gray-100 text-sm md:text-xl">
-              © Roam n Learn 2025. All rights reserved.
-            </p>
-            <div className="flex space-x-5">
-              <Link
-                href="/youtube"
-                className="text-gray-100 border h-10 w-10 flex items-center rounded-full p-2 hover:text-white text-sm transition-colors"
-              >
-                <FaYoutube className="size-7" />
-              </Link>
-              <Link
-                href="/terms"
-                className="text-gray-100 border h-10 w-10 flex items-center rounded-full p-2 hover:text-white text-sm transition-colors"
-              >
-                <FaFacebookF className="size-7" />
-              </Link>
-              <Link
-                href="/cookies"
-                className="text-gray-100 border h-10 w-10 flex items-center rounded-full p-2 hover:text-white text-sm transition-colors"
-              >
-                <PiInstagramLogoFill className="size-7" />
-              </Link>
-              <Link
-                href="/cookies"
-                className="text-gray-100 border h-10 w-10 flex items-center rounded-full p-2 hover:text-white text-sm transition-colors"
-              >
-                <RiLinkedinFill className="size-7" />
-              </Link>
-            </div>
-          </div>
+          <p className="text-gray-100 text-sm md:text-xl text-center">
+            © Roam n Learn 2025. All rights reserved.
+          </p>
         </div>
       </div>
     </footer >
