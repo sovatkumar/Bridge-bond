@@ -15,7 +15,7 @@ type CodeOfConductProps = {
 export default function CodeOfConduct({ heading, description, img, list, className, backgroundColor, icon }: CodeOfConductProps) {
   return (
     <div className={` ${backgroundColor} `} >
-      <div className={`container px-4 py-16  flex ${className.mainCss} items-center md:items-start gap-14 `}>
+      <div className={`container py-16  flex ${className.mainCss} items-center md:items-start gap-14 `}>
         {/* Image Section */}
         <div className="md:w-1/2 w-full">
           <Image

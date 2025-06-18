@@ -6,8 +6,8 @@ import { RiLinkedinFill } from "react-icons/ri";
 
 export default function Footer() {
   return (
-    <footer className="relative w-full  bg-[url('/images/footer-background.png')] bg-no-repeat bg-cover bg-center z-10">
-      <div className="container mx-auto px-4 pt-16 pb-5 relative z-10">
+    <footer className="relative w-full bg-[url('/images/footer-background.png')] bg-no-repeat bg-cover bg-center z-10">
+      <div className="container mx-auto px-4 md:px-0 pt-16 pb-5 relative z-10">
         <div className="grid grid-cols-1 gap-3 lg:justify-self-center">
           {/* Company Info */}
           <div className="space-y-6 lg:text-center">

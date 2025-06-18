@@ -18,7 +18,6 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { Plus, Minus } from "lucide-react";
 
 export default function Home() {
   const feedback = [
@@ -51,14 +50,14 @@ export default function Home() {
   return (
     <>
       <article>
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto">
           <Homebanner />
         </div>
       </article>
 
       {/* why choose Room and learn  */}
       <article>
-        <div className="min-h-screen container py-10 lg:py-20 md:px-4">
+        <div className="min-h-screen container py-10 lg:py-20">
           <div className="space-y-10 max-w-6xl m-auto text-center mb-10">
             <h2 className="text-3xl lg:text-5xl xl:text-[52px] font-bold mb-5">
               Why Choose <span className="primary-red">Roam and Learn?</span>
@@ -71,17 +70,16 @@ export default function Home() {
               all while having the time of your life.
             </p>
           </div>
-
-          <Card className="min-h-[700px] grid grid-cols-1 md:grid-cols-2 gap-8 !rounded-[2.5rem] items-center justify-around lightGradientColor border-0"></Card>
+          <Card className="min-h-[500px] xl:min-h-[700px] grid grid-cols-1 md:grid-cols-2 gap-8 !rounded-[2.5rem] items-center justify-around lightGradientColor border-0"></Card>
         </div>
       </article>
 
       {/* Feactured section  */}
-      <article className="min-h-min container py-10 lg:py-20 md:px-4">
+      <article className="min-h-min container py-10 lg:py-20">
         <div className="md:grid grid-cols-2 gap-10">
           {/* Left Section: Promotional Message */}
           <div className="space-y-4 text-start">
-            <h2 className="text-4xl lg:text-5xl xl:text-[52px] font-bold">
+            <h2 className="text-4xl lg:text-5xl xl:text-[52px] font-bold text-center md:text-left">
               Top <span className="text-red-500">Destinations</span>
             </h2>
             <h4 className="text-xl lg:text-2xl font-semibold">
@@ -136,13 +134,13 @@ export default function Home() {
       </article>
 
       {/* Now in the station your next adventure */}
-      <article className="py-10 lg:py-20 md:px-4">
+      <article className="py-10 lg:py-20">
         <RegisterCard />
       </article>
 
       {/* why choose Us */}
       <article>
-        <div className="container min-h-min 2xl:max-w-8xl py-10 lg:py-20 px-4">
+        <div className="container min-h-min 2xl:max-w-8xl py-10 lg:py-20">
           <h2 className="text-3xl lg:text-5xl xl:text-52 font-bold mb-5 md:mb-8 text-center">
             Why Choose <span className="primary-red">Us?</span>
           </h2>
@@ -214,7 +212,7 @@ export default function Home() {
 
       {/*  Our Licenses */}
       <article>
-        <div className="container min-h-min 2xl:max-w-8xl py-10 lg:py-20 px-4">
+        <div className="container min-h-min 2xl:max-w-8xl py-10 lg:py-20">
           <div className="space-y-10 max-w-6xl m-auto text-center mb-10">
             <h2 className="text-3xl lg:text-5xl xl:text-[52px] font-bold mb-5">
               Our <span className="primary-red">Licenses</span>
@@ -264,8 +262,8 @@ export default function Home() {
       </article>
 
       {/* feedback */}
-      <article className="container py-10 lg:py-20 md:px-4">
-        <Card className="relative h-full bg-no-repeat bg-center bg-cover rounded-4xl bg-[url('/images/red-yellow-background.png')] py-10 px-5 lg:!p-16 z-10 grid grid-cols-1 md:grid-cols-3 gap-8 ">
+      <article className="container py-10 lg:py-20">
+        <Card className="relative h-full bg-no-repeat bg-center bg-cover rounded-4xl bg-[url('/images/red-yellow-background.png')] py-10 px-4 lg:!p-16 z-10 md:grid grid-cols-1 md:grid-cols-3 gap-8 ">
           {/* Left Section: Promotional Message */}
           <div className="space-y-4 text-start col-span-1">
             <h2 className="text-4xl lg:text-5xl xl:text-[52px] 2xl:text-[60px] font-bold text-white">
@@ -295,7 +293,7 @@ export default function Home() {
                     key={feedback.id}
                     className="pl-6 w-full lg:w-1/2"
                   >
-                    <div className="p-1 h-full">
+                    <div className="h-full">
                       <Card className="h-full shadow-lg overflow-hidden rounded-2xl bg-white !py-0">
                         <div className="w-full p-6 flex flex-col justify-between h-full gap-y-4 text-center">
                           <Image
@@ -330,14 +328,14 @@ export default function Home() {
 
       {/*faqs */}
       <article>
-        <div className="container min-h-min max-w-8xl py-10 lg:py-20 px-4">
+        <div className="container min-h-min max-w-8xl py-10 lg:py-20">
           <div className="space-y-10 max-w-6xl m-auto text-center mb-10">
             <h2 className="text-3xl lg:text-5xl font-bold mb-5">
               Got Questions? We've <br />
               <span className="primary-red">Got Answers.</span>
             </h2>
           </div>
-          <div className="grid lg:grid-cols-2 gap-5">
+          <div className="grid lg:grid-cols-2 gap-3 md:gap-5">
             {[
               {
                 title: "What is Roam N Learn?",
@@ -393,10 +391,7 @@ export default function Home() {
                 >
                   <AccordionTrigger className="flex justify-between px-3 md:px-5 text-lg md:text-xl 2xl:text-2xl hover:no-underline">
                     {title}
-                    <span>
-                      {/* <Plus className="block data-[state=open]:hidden w-5 h-5" />
-                        <Minus className="hidden data-[state=open]:block w-5 h-5" /> */}
-                    </span>
+
                   </AccordionTrigger>
 
                   <AccordionContent className="text-base md:text-lg text-gray-800 px-3 md:px-5 pb-8">
@@ -411,7 +406,7 @@ export default function Home() {
 
       {/*  Promotional videos */}
       <article>
-        <div className="container min-h-min max-w-8xl py-10 lg:py-20 px-4">
+        <div className="container min-h-min max-w-8xl py-10 lg:py-20">
           <div className="space-y-10 max-w-6xl m-auto text-center mb-10">
             <h2 className="text-3xl lg:text-5xl xl:text-52 font-bold mb-5">
               Promotional <span className="primary-blue">videos</span>

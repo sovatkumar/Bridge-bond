@@ -36,9 +36,9 @@ export default function RootLayout({
         <Navbar />
         <main className="min-h-[80vh] !px-4 lg:!px-0">
           <Pagebanner title="Code of Conduct" />
-          <div className="container py-10 md:py-20 lg:py-30 px-10 grid grid-cols-2 justify-between">
+          <div className="container py-10 md:py-20 lg:py-30 xl:px-10 grid grid-cols-1 md:grid-cols-2 gap-5">
             <div> {children}</div>
-            <div>
+            <div className="hidden md:block">
               <Image
                 src="/images/register-image.png"
                 alt="iamge"

@@ -23,15 +23,19 @@ export default function page() {
         "Disable cookies via your browser settings or opt out of tracking.",
     ];
     return (
-        <div className="container py-10 lg:py-20 md:px-4">
+        <div className="container py-10 lg:py-20 ">
             <div className="lg:w-[90%]">
                 <div>
                     <h1 className="text-4xl md:text-6xl py-5">Introduction</h1>
                     <p className="text-lg md:text-2xl leading-normal lg:leading-9">
-                        At Roam and Learn, we&apos;re committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy is here to explain what data we collect, why we need it, how we use it, and how we keep it safe.
+                        At Roam and Learn, we&apos;re committed to protecting your privacy
+                        and ensuring the security of your personal information. This Privacy
+                        Policy is here to explain what data we collect, why we need it, how
+                        we use it, and how we keep it safe.
                         <br />
                         <br />
-                        By using our website or joining one of our student tours, you agree to the practices described in this Privacy Policy.
+                        By using our website or joining one of our student tours, you agree
+                        to the practices described in this Privacy Policy.
                     </p>
                 </div>
                 <article>
@@ -40,53 +44,69 @@ export default function page() {
                             1. Information <span className="primary-red">We Collect</span>
                         </h1>
                         <p className="text-lg md:text-2xl pb-4 leading-normal lg:leading-9">
-                            We collect personal data to provide better services and safer travel experiences. This includes:
+                            We collect personal data to provide better services and safer
+                            travel experiences. This includes:
                         </p>
 
-                        <h2 className="primary-blue text-xl md:text-2xl font-semibold"><strong>Personal Information:</strong></h2>
-                        <p className="text-lg md:text-2xl pb-4 leading-normal lg:leading-9">Full name, date of birth, gender, nationality, passport details, email
-                            address, phone number, school or institution name, and emergency
-                            contact information.</p>
+                        <h2 className="primary-blue text-xl md:text-2xl font-semibold">
+                            <strong>Personal Information:</strong>
+                        </h2>
+                        <p className="text-lg md:text-2xl pb-4 leading-normal lg:leading-9">
+                            Full name, date of birth, gender, nationality, passport details,
+                            email address, phone number, school or institution name, and
+                            emergency contact information.
+                        </p>
 
-                        <h2 className="primary-blue text-xl md:text-2xl font-semibold"><strong className="primary-blue">
-                            Health and Safety Information:
-                        </strong>
+                        <h2 className="primary-blue text-xl md:text-2xl font-semibold">
+                            <strong className="primary-blue">
+                                Health and Safety Information:
+                            </strong>
                         </h2>
                         <p className="text-lg md:text-2xl pb-4 leading-normal lg:leading-9">
                             Allergies, dietary restrictions, medical conditions, and insurance
                             details to ensure your well-being during the trip.
                         </p>
 
-                        <h2 className="primary-blue text-xl md:text-2xl font-semibold"><strong className="primary-blue">Travel Preferences:</strong></h2>
+                        <h2 className="primary-blue text-xl md:text-2xl font-semibold">
+                            <strong className="primary-blue">Travel Preferences:</strong>
+                        </h2>
                         <p className="text-lg md:text-2xl pb-4 leading-normal lg:leading-9">
                             Rooming requests, travel interests, and activity preferences to
                             customize your experience.
                         </p>
 
                         <h2 className="primary-blue text-xl md:text-2xl font-semibold">
-                            <strong className="primary-blue">Payment and Billing Info:</strong></h2>
+                            <strong className="primary-blue">
+                                Payment and Billing Info:
+                            </strong>
+                        </h2>
                         <p className="text-lg md:text-2xl pb-4 leading-normal lg:leading-9">
                             Credit/debit card details and billing addresses (collected through
                             secure third-party services).
                         </p>
 
                         <h2 className="primary-blue text-xl md:text-2xl font-semibold">
-                            <strong className="primary-blue">Website Usage Data:</strong></h2>
-                        <p className="text-lg md:text-2xl pb-4 leading-normal lg:leading-9">IP address, browser type, device information, and site interactions
-                            collected via cookies and analytics tools.
+                            <strong className="primary-blue">Website Usage Data:</strong>
+                        </h2>
+                        <p className="text-lg md:text-2xl pb-4 leading-normal lg:leading-9">
+                            IP address, browser type, device information, and site
+                            interactions collected via cookies and analytics tools.
                         </p>
 
                         <h2 className="primary-blue text-xl md:text-2xl font-semibold">
-                            <strong className="primary-blue">Photos and Videos:</strong></h2>
-                        <p className="text-lg md:text-2xl pb-4 leading-normal lg:leading-9">Images captured during tours may be used for promotional content, with
-                            prior consent.
+                            <strong className="primary-blue">Photos and Videos:</strong>
+                        </h2>
+                        <p className="text-lg md:text-2xl pb-4 leading-normal lg:leading-9">
+                            Images captured during tours may be used for promotional content,
+                            with prior consent.
                         </p>
                     </div>
                 </article>
                 <article>
                     <div>
                         <h1 className="text-2xl md:text-4xl py-5">
-                            2. How We Use <span className="primary-red">Your Information</span>
+                            2. How We Use{" "}
+                            <span className="primary-red">Your Information</span>
                         </h1>
                         <p className="text-lg md:text-2xl pb-5 leading-normal lg:leading-9">
                             Your data helps us provide a seamless and personalised experience.
@@ -118,20 +138,28 @@ export default function page() {
                             We only share your data when necessary and with trusted partners:
                         </p>
 
-                        <h2 className="primary-blue text-xl md:text-2xl font-semibold"><strong className="primary-blue">Travel Vendors: </strong></h2>
-                        <p className="text-lg md:text-2xl pb-4 leading-normal lg:leading-9">Airlines, hotels, local guides, and transport providers, to ensure your trip
-                            is booked and managed properly.
+                        <h2 className="primary-blue text-xl md:text-2xl font-semibold">
+                            <strong className="primary-blue">Travel Vendors: </strong>
+                        </h2>
+                        <p className="text-lg md:text-2xl pb-4 leading-normal lg:leading-9">
+                            Airlines, hotels, local guides, and transport providers, to ensure
+                            your trip is booked and managed properly.
                         </p>
 
                         <h2 className="primary-blue text-xl md:text-2xl font-semibold">
-                            <strong className="primary-blue">Medical Personnel: </strong></h2>
-                        <p className="text-lg md:text-2xl pb-4 leading-normal lg:leading-9 ">In case of an emergency, we may share relevant health data with healthcare
-                            providers.
+                            <strong className="primary-blue">Medical Personnel: </strong>
+                        </h2>
+                        <p className="text-lg md:text-2xl pb-4 leading-normal lg:leading-9 ">
+                            In case of an emergency, we may share relevant health data with
+                            healthcare providers.
                         </p>
 
                         <h2 className="primary-blue text-xl md:text-2xl font-semibold">
-                            <strong className="primary-blue">Third-Party Services:</strong></h2>
-                        <p className="text-lg md:text-2xl pb-4 leading-normal lg:leading-9"> Secure payment gateways, email platforms, and analytics tools used
+                            <strong className="primary-blue">Third-Party Services:</strong>
+                        </h2>
+                        <p className="text-lg md:text-2xl pb-4 leading-normal lg:leading-9">
+                            {" "}
+                            Secure payment gateways, email platforms, and analytics tools used
                             to manage our services.
                         </p>
                         <p className="text-lg md:text-2xl pb-4 leading-normal lg:leading-9">
@@ -190,15 +218,16 @@ export default function page() {
                             </p>
                         ))}
                         <p className="text-lg md:text-2xl py-5 leading-normal lg:leading-9">
-                            To make a request, email us at [insert email address]. We&apos;ll respond
-                            within 30 days.
+                            To make a request, email us at [insert email address]. We&apos;ll
+                            respond within 30 days.
                         </p>
                     </div>
                 </article>
                 <article>
                     <div>
                         <h1 className="text-2xl md:text-4xl py-5">
-                            6. Cookies and Tracking <span className="primary-red">Technologies</span>
+                            6. Cookies and Tracking{" "}
+                            <span className="primary-red">Technologies</span>
                         </h1>
                         <p className="text-lg md:text-2xl pb-4 leading-normal lg:leading-9">
                             Our website uses cookies to enhance user experience, gather
@@ -218,9 +247,9 @@ export default function page() {
                             7. Data <span className="primary-red">Retention</span>
                         </h1>
                         <p className="text-lg md:text-2xl pb-4 leading-normal lg:leading-9">
-                            We only keep your data for as long as needed to fulfill the purposes
-                            listed in this policy. Once it&apos;s no longer needed, we delete it
-                            securely.
+                            We only keep your data for as long as needed to fulfill the
+                            purposes listed in this policy. Once it&apos;s no longer needed,
+                            we delete it securely.
                         </p>
                         <p className="text-lg md:text-2xl pb-4 leading-normal lg:leading-9">
                             In some cases, we may keep data longer if required by law (e.g.,
@@ -235,12 +264,12 @@ export default function page() {
                         </h1>
                         <p className="text-lg md:text-2xl pb-4 leading-normal lg:leading-9">
                             We may update this Privacy Policy from time to time. If we make
-                            significant changes, we&apos;ll notify you by email or through a notice
-                            on our website.
+                            significant changes, we&apos;ll notify you by email or through a
+                            notice on our website.
                         </p>
                         <p className="text-lg md:text-2xl pb-4 leading-normal lg:leading-9">
-                            The 'Last updated&apos; date at the top of the policy will show you when
-                            it was last changed.
+                            The 'Last updated&apos; date at the top of the policy will show
+                            you when it was last changed.
                         </p>
                     </div>
                 </article>

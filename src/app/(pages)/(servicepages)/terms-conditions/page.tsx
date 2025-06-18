@@ -2,7 +2,7 @@ import React from "react";
 
 export default function page() {
     return (
-        <div className="container lg:py-20 py-10 md:px-4 lg:w-[80%]">
+        <div className="container lg:py-20 py-10 lg:w-[80%]">
             <div className="py-5">
                 <h2 className="text-3xl md:text-4xl xl:text-5xl text-black pb-5">
                     Roam N Learn{" "}

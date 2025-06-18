@@ -61,11 +61,12 @@ export default function page() {
               </FormItem>
             )}
           />
-          <div className="flex items-center gap-3">
+          <div className="space-y-4">
             <Button type="submit" className="w-fit bg-primary-red px-10 py-5 rounded-full text-lg">
               Sign In
             </Button>
-            <p className="text-base lg:text-lg xl:text-xl">Have an account? <Link href="#" className="primary-red">Sign In </Link> </p>
+            <p className="text-base lg:text-lg xl:text-xl">Don’t have account? <Link href="/auth/sign-up" className="primary-red"> Sign Up</Link> </p>
+            <p className="text-base lg:text-lg xl:text-xl"><Link href="/forgot-password" className="primary-red">Forgot password</Link> </p>
           </div>
         </form>
       </Form>

@@ -6,7 +6,7 @@ function Navbar() {
   return (
     <>
       <nav className={"hidden lg:block"}>
-        <div className="container py-10 px-4 lg:flex justify-between items-center">
+        <div className="container py-10 lg:flex justify-between items-center">
           <div className="logo-container">
             <Link href="/" className="nav-link">
               <Image
@@ -28,9 +28,6 @@ function Navbar() {
             </Link>
             <Link href="/destinations" className="nav-link">
               TOURS
-            </Link>
-            <Link href="how-it-work" className="nav-link">
-              HOW IT WORKS
             </Link>
             <Link href="/contact-us" className="nav-link active">
               CONTACT US

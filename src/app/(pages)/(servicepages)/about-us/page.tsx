@@ -22,9 +22,9 @@ export default function aboutus() {
         mainCss: "",
         heading: "primary-red",
         text: "text-black",
-        paraHeading: "text-black",
+        paraHeading: "text-black pt-5",
       },
-      icon: "Objects.png",
+      icon: "objects.png",
     },
     {
       heading: "Our Story",
@@ -41,7 +41,7 @@ export default function aboutus() {
       list: [],
       className: {
         mainCss:
-          "flex-row-reverse  bg-[url('/images/home-banner-background.png')] bg-no-repeat bg-cover rounded-4xl px-4",
+          "flex-row-reverse  bg-[url('/images/home-banner-background.png')] bg-no-repeat bg-cover rounded-4xl",
         heading: "text-white",
         text: "text-white xl:w-[90%]",
         paraHeading: "",

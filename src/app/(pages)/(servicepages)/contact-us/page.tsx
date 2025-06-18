@@ -97,10 +97,10 @@ export default function page() {
   };
 
   return (
-    <section className='container py-10 lg:py-20 md:px-4'>
+    <section className="container py-10 lg:py-20">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-10">
         {contacts.map((card, index) => (
-          <Card key={index} className="!gap-4 text-center shadow-sm boxShadow border-none !rounded-3xl">
+          <Card key={index} className="md:!gap-4 !gap-2 text-center shadow-sm boxShadow border-none !rounded-3xl">
             <div className="flex justify-center bg-primary-blue m-auto text-white p-4 rounded-full md:mb-4 border-none" >{card.icon}</div>
             <CardHeader>
               <CardTitle className="text-lg md:text-2xl xl:text-3xl 2xl:text-4xl">{card.title}</CardTitle>
@@ -109,9 +109,9 @@ export default function page() {
           </Card>
         ))}
       </div>
-      <div className="container flex flex-col lg:justify-self-center gap-3 py-20">
+      <div className="container flex flex-col lg:justify-self-center gap-3 py-10 lg:py-20">
         <p className="text-center text-2xl md:text-3xl">Still not sorted</p>
-        <h2 className="text-center text-4xl lg:text-6xl pb-8">Drop us <span className='primary-red'>a line</span></h2>
+        <h2 className="text-center text-4xl lg:text-6xl pb-8">Drop us <span className="primary-red">a line</span></h2>
         <Select>
           <SelectTrigger className="w-full 2xl:w-[80%] flex self-center">
             <SelectValue placeholder="Select category*" />
@@ -131,13 +131,13 @@ export default function page() {
         </Select>
       </div>
 
-      <Card className='flex w-full justify-center shadow-sm p-5 md:p-10 rounded-4xl'>
+      <Card className="flex w-full justify-center shadow-sm p-5 md:p-10 rounded-4xl">
         <Form {...form}>
           <form
             onSubmit={form.handleSubmit(onSubmit)}
             className="flex-1  space-y-6"
           >
-            <h2 className='text-2xl md:text-3xl'>Please provide your details:</h2>
+            <h2 className="text-2xl md:text-3xl">Please provide your details:</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <FormField
                 control={form.control}
@@ -145,7 +145,7 @@ export default function page() {
                 render={({ field }) => (
                   <FormItem>
                     <FormControl>
-                      <Input className='lg:h-12 xl:h-14' placeholder="First Name" {...field} />
+                      <Input className="lg:h-12 xl:h-14" placeholder="First Name" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -158,7 +158,7 @@ export default function page() {
                 render={({ field }) => (
                   <FormItem>
                     <FormControl>
-                      <Input className='lg:h-12 xl:h-14' placeholder="Last Name" {...field} />
+                      <Input className="lg:h-12 xl:h-14" placeholder="Last Name" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -172,7 +172,7 @@ export default function page() {
                 render={({ field }) => (
                   <FormItem>
                     <FormControl>
-                      <Input className='lg:h-12 xl:h-14' type="email" placeholder="Enter Your Email" {...field} />
+                      <Input className="lg:h-12 xl:h-14" type="email" placeholder="Enter Your Email" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -185,7 +185,7 @@ export default function page() {
                 render={({ field }) => (
                   <FormItem>
                     <FormControl>
-                      <Input className='lg:h-12 xl:h-14' type="tel" placeholder="Enter Your Phone Number" {...field} />
+                      <Input className="lg:h-12 xl:h-14" type="tel" placeholder="Enter Your Phone Number" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>

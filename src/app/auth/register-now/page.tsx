@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import Link from "next/link";
 import { useForm } from "react-hook-form";
 import {
     Form,
@@ -12,12 +11,6 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { Label } from "@/components/ui/label"
-import {
-    RadioGroup,
-    RadioGroupItem,
-} from "@/components/ui/radio-group"
-
 
 type FormData = {
     fullName: string;
@@ -44,7 +37,7 @@ export default function page() {
             parent: "",
             parentPhone: "",
             relationship: "",
-            invitationCode: ""
+            invitationCode: "",
         },
     });
 
@@ -65,7 +58,11 @@ export default function page() {
                         render={({ field }) => (
                             <FormItem>
                                 <FormControl>
-                                    <Input placeholder="Full Name" {...field} className="border border-faint-red" />
+                                    <Input
+                                        placeholder="Full Name"
+                                        {...field}
+                                        className="border border-faint-red"
+                                    />
                                 </FormControl>
                                 <FormMessage />
                             </FormItem>
@@ -77,7 +74,12 @@ export default function page() {
                         render={({ field }) => (
                             <FormItem>
                                 <FormControl>
-                                    <Input type="email" placeholder="Email address" {...field} className="border border-faint-red" />
+                                    <Input
+                                        type="email"
+                                        placeholder="Email address"
+                                        {...field}
+                                        className="border border-faint-red"
+                                    />
                                 </FormControl>
                                 <FormMessage />
                             </FormItem>
@@ -89,7 +91,12 @@ export default function page() {
                         render={({ field }) => (
                             <FormItem>
                                 <FormControl>
-                                    <Input type="tel" placeholder="Phone Number" {...field} className="border border-faint-red" />
+                                    <Input
+                                        type="tel"
+                                        placeholder="Phone Number"
+                                        {...field}
+                                        className="border border-faint-red"
+                                    />
                                 </FormControl>
                                 <FormMessage />
                             </FormItem>
@@ -101,7 +108,12 @@ export default function page() {
                         render={({ field }) => (
                             <FormItem>
                                 <FormControl>
-                                    <Input placeholder="Date of Birth" type="date" {...field} className="border border-faint-red" />
+                                    <Input
+                                        placeholder="Date of Birth"
+                                        type="date"
+                                        {...field}
+                                        className="border border-faint-red"
+                                    />
                                 </FormControl>
                                 <FormMessage />
                             </FormItem>
@@ -113,7 +125,11 @@ export default function page() {
                         render={({ field }) => (
                             <FormItem>
                                 <FormControl>
-                                    <Input placeholder="School / College" {...field} className="border border-faint-red" />
+                                    <Input
+                                        placeholder="School / College"
+                                        {...field}
+                                        className="border border-faint-red"
+                                    />
                                 </FormControl>
                                 <FormMessage />
                             </FormItem>
@@ -125,7 +141,11 @@ export default function page() {
                         render={({ field }) => (
                             <FormItem>
                                 <FormControl>
-                                    <Input placeholder="Grade / Year" {...field} className="border border-faint-red" />
+                                    <Input
+                                        placeholder="Grade / Year"
+                                        {...field}
+                                        className="border border-faint-red"
+                                    />
                                 </FormControl>
                                 <FormMessage />
                             </FormItem>
@@ -137,7 +157,11 @@ export default function page() {
                         render={({ field }) => (
                             <FormItem>
                                 <FormControl>
-                                    <Input placeholder="Parent / Guardian" {...field} className="border border-faint-red" />
+                                    <Input
+                                        placeholder="Parent / Guardian"
+                                        {...field}
+                                        className="border border-faint-red"
+                                    />
                                 </FormControl>
                                 <FormMessage />
                             </FormItem>
@@ -149,7 +173,11 @@ export default function page() {
                         render={({ field }) => (
                             <FormItem>
                                 <FormControl>
-                                    <Input placeholder="Contact Number" {...field} className="border border-faint-red" />
+                                    <Input
+                                        placeholder="Contact Number"
+                                        {...field}
+                                        className="border border-faint-red"
+                                    />
                                 </FormControl>
                                 <FormMessage />
                             </FormItem>
@@ -161,7 +189,11 @@ export default function page() {
                         render={({ field }) => (
                             <FormItem>
                                 <FormControl>
-                                    <Input placeholder="Relationship" {...field} className="border border-faint-red" />
+                                    <Input
+                                        placeholder="Relationship"
+                                        {...field}
+                                        className="border border-faint-red"
+                                    />
                                 </FormControl>
                                 <FormMessage />
                             </FormItem>
@@ -173,7 +205,11 @@ export default function page() {
                         render={({ field }) => (
                             <FormItem>
                                 <FormControl>
-                                    <Input placeholder="Invitation Code" {...field} className="border border-faint-red" />
+                                    <Input
+                                        placeholder="Invitation Code"
+                                        {...field}
+                                        className="border border-faint-red"
+                                    />
                                 </FormControl>
                                 <FormMessage />
                             </FormItem>
@@ -187,6 +223,6 @@ export default function page() {
                     </Button>
                 </form>
             </Form>
-        </div >
+        </div>
     );
 }

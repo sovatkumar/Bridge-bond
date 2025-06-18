@@ -9,7 +9,7 @@ function Destionation() {
     <>
       {/*  Promotional videos */}
       <article>
-        <div className="container min-h-min max-w-8xl py-10 lg:py-20 lg:px-4 space-y-10">
+        <div className="container min-h-min 2xl:max-w-8xl py-10 lg:py-20 space-y-10">
           <div className=" max-w-6xl m-auto text-center mb-10">
             <h2 className="text-3xl lg:text-5xl xl:text-52 font-bold mb-5">
               Top <span className="primary-red">Destinations</span>
@@ -62,7 +62,7 @@ function Destionation() {
       </article>
       {/*  Promotional videos */}
       <article>
-        <div className="container min-h-min max-w-8xl py-10 lg:py-20 px-4">
+        <div className="container min-h-min 2xl:max-w-8xl py-10 lg:py-20">
           <div className="space-y-10 max-w-6xl m-auto text-center mb-10">
             <h2 className="text-3xl lg:text-5xl xl:text-52 font-bold mb-5">
               Trip Details
@@ -93,7 +93,7 @@ function Destionation() {
             ].map(({ icon, tourTimeLine, expiryDate }, index) => (
               <Card
                 key={index}
-                className="min-h-60 px-4 flex flex-col items-center justify-center !rounded-3xl"
+                className="min-h-60 flex flex-col items-center justify-center !rounded-3xl"
               >
                 <div className="p-3 h-16 w-16 bg-primary-blue rounded-2xl content-center">
                   <Image
@@ -118,17 +118,17 @@ function Destionation() {
       {/* Stay Safe */}
       <article>
         <Card
-          className={"container bg-[url('/images/home-banner-background.png')] bg-no-repeat bg-cover z-10 !my-20 lg:grid lg:grid-cols-2 items-center !rounded-3xl overflow-hidden gap-x-12 lg:p-10 border-0"}
+          className={"container bg-[url('/images/home-banner-background.png')] bg-no-repeat bg-cover z-10 !my-20 lg:grid lg:grid-cols-2 items-center !rounded-3xl overflow-hidden gap-x-8 p-4 xl:p-10 border-0"}
         >
 
           {/* Text Content */}
-          <div className="order-2 lg:order-1 w-full p-4 lg:p-10">
-            <div className="space-y-4 lg:space-y-10 text-white">
+          <div className="order-2 lg:order-1 w-full p-4 xl:p-10">
+            <div className="space-y-4 lg:space-y-8 2xl:space-y-10 text-white">
               <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold">
                 Trip Overview
               </h2>
 
-              <div className="text-sm lg:text-xl space-y-2">
+              <div className="text-sm lg:text-lg xl:text-xl space-y-2">
                 <p>We’re a small but mighty crew of travel pros, safety experts, and youth leaders who care deeply about student experiences. We plan every detail, guide every step, and keep the energy high (and the fun even higher).</p>
                 <p>We’re here to help you roam safely, confidently—and with a lot of stories to tell when you get back.</p>
               </div>
@@ -139,7 +139,7 @@ function Destionation() {
           </div>
           {/* Image contain  */}
           <div className="order-1 lg:order-2 ">
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
               {[
                 {
                   icon: "/icons/days-icon.png",
@@ -174,7 +174,7 @@ function Destionation() {
               ].map(({ icon, heading, para }, index) => (
                 <Card
                   key={index}
-                  className="min-h-60 px-4 flex flex-col items-center justify-center !rounded-3xl"
+                  className="flex flex-col items-center justify-center !rounded-3xl !gap-5"
                 >
                   <div className="p-3 h-16 w-16 content-center bg-primary-red rounded-xl">
                     <Image
@@ -186,8 +186,8 @@ function Destionation() {
                     />
                   </div>
                   <div className="text-center">
-                    <h6 className="text-lg lg:text-xl">{heading}</h6>
-                    <p className="text-sm lg:text-lg text-gray-700">
+                    <h6 className="text-lg xl:text-xl">{heading}</h6>
+                    <p className="text-base 2xl:text-lg text-gray-700">
                       {para}
                     </p>
                   </div>
@@ -198,7 +198,7 @@ function Destionation() {
         </Card>
       </article>
       <article>
-        <div className="container py-10 md:py-20 px-4">
+        <div className="container py-10 md:py-20">
           {/* Heading */}
           <h1 className="text-3xl md:text-4xl font-bold mb-10 text-center">
             Map &{" "}

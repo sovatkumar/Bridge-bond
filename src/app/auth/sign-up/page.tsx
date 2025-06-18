@@ -111,8 +111,8 @@ export default function page() {
               </FormItem>
             )}
           />
-          <div className="flex w-full gap-6">
-            <Button type="submit" className="w-fit bg-primary-red px-10 py-5 rounded-full text-lg">
+          <div className="flex w-full gap-4 md:gap-6">
+            <Button type="submit" className="w-fit bg-primary-red px-7 md:px-10 py-5 rounded-full text-lg">
               Send OTP
             </Button>
             <FormField
@@ -152,11 +152,11 @@ export default function page() {
               </FormItem>
             )}
           />
-          <div className="flex items-center gap-3">
+          <div className="flex flex-col md:flex-row items-center gap-3">
             <Button type="submit" className="w-fit bg-primary-red px-10 py-5 rounded-full text-lg">
               Sign Up
             </Button>
-            <p className="text-base lg:text-lg xl:text-xl">Have an account? <Link href="#" className="primary-red">Sign In </Link> </p>
+            <p className="text-base lg:text-lg xl:text-xl">Have an account? <Link href="/auth/sign-in" className="primary-red">Sign In </Link> </p>
           </div>
         </form>
       </Form>
