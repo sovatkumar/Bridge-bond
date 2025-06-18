@@ -95,7 +95,7 @@ function Destionation() {
                 key={index}
                 className="min-h-60 px-4 flex flex-col items-center justify-center !rounded-3xl"
               >
-                <div className="p-2 bg-primary-blue rounded-xl">
+                <div className="p-3 h-16 w-16 bg-primary-blue rounded-2xl content-center">
                   <Image
                     src={icon}
                     alt={icon}
@@ -132,7 +132,7 @@ function Destionation() {
                 <p>We’re a small but mighty crew of travel pros, safety experts, and youth leaders who care deeply about student experiences. We plan every detail, guide every step, and keep the energy high (and the fun even higher).</p>
                 <p>We’re here to help you roam safely, confidently—and with a lot of stories to tell when you get back.</p>
               </div>
-              <Button className="!rounded-3xl mt-6 px-8 py-4 primary-red bg-white shadow-md transition-colors">
+              <Button className="!rounded-3xl mt-6 px-8 py-6 primary-red bg-white shadow-md transition-colors">
                 <Link href="#">READY TO ROAM?</Link>
               </Button>
             </div>
@@ -142,41 +142,41 @@ function Destionation() {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {[
                 {
-                  icon: "/icons/destination-icon.png",
-                  tourTimeLine: "Days:",
-                  expiryDate: "6 Days",
+                  icon: "/icons/days-icon.png",
+                  heading: "Days:",
+                  para: "6 Days",
                 },
                 {
-                  icon: "/icons/calender-icon.png",
-                  tourTimeLine: "Accommodation:",
-                  expiryDate: "3 Hostels, 2 nights in Travel",
+                  icon: "/icons/accommodation-icon.png",
+                  heading: "Accommodation:",
+                  para: "3 Hostels, 2 nights in Travel",
                 },
                 {
-                  icon: "/icons/review-icon.png",
-                  tourTimeLine: "Meals:",
-                  expiryDate: "6 Breakfasts, 6 Dinners",
+                  icon: "/icons/meals-icon.png",
+                  heading: "Meals:",
+                  para: "6 Breakfasts, 6 Dinners",
                 },
                 {
-                  icon: "/icons/price-icon.png",
-                  tourTimeLine: "Transport",
-                  expiryDate: "Coach",
+                  icon: "/icons/transport-icon.png",
+                  heading: "Transport",
+                  para: "Coach",
                 },
                 {
-                  icon: "/icons/review-icon.png",
-                  tourTimeLine: "Group Size",
-                  expiryDate: "Average 20 students",
+                  icon: "/icons/group-icon.png",
+                  heading: "Group Size",
+                  para: "Average 20 students",
                 },
                 {
-                  icon: "/icons/price-icon.png",
-                  tourTimeLine: "Crew",
-                  expiryDate: "Expert Trip Manager, Driver Team, Local Guides",
+                  icon: "/icons/crew-icon.png",
+                  heading: "Crew",
+                  para: "Expert Trip Manager, Driver Team, Local Guides",
                 }
-              ].map(({ icon, tourTimeLine, expiryDate }, index) => (
+              ].map(({ icon, heading, para }, index) => (
                 <Card
                   key={index}
                   className="min-h-60 px-4 flex flex-col items-center justify-center !rounded-3xl"
                 >
-                  <div className="p-2 bg-primary-red rounded-xl">
+                  <div className="p-3 h-16 w-16 content-center bg-primary-red rounded-xl">
                     <Image
                       src={icon}
                       alt={icon}
@@ -186,9 +186,9 @@ function Destionation() {
                     />
                   </div>
                   <div className="text-center">
-                    <h6 className="text-lg lg:text-xl">{tourTimeLine}</h6>
+                    <h6 className="text-lg lg:text-xl">{heading}</h6>
                     <p className="text-sm lg:text-lg text-gray-700">
-                      {expiryDate}
+                      {para}
                     </p>
                   </div>
                 </Card>
@@ -197,7 +197,46 @@ function Destionation() {
           </div>
         </Card>
       </article>
+      <article>
+        <div className="container py-10 md:py-20 px-4">
+          {/* Heading */}
+          <h1 className="text-3xl md:text-4xl font-bold mb-10 text-center">
+            Map &{" "}
+            <span className="primary-red">Itinerary</span>
+          </h1>
 
+          {/* Grid: Left Itinerary + Right Map */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+            {/* Itinerary Timeline */}
+            <div className="container relative space-y-6 before:absolute before:top-0 before:-left-8 before:bottom-0 before:border-l-2 before:border-dashed before:border-[#00aea5]">
+              {Array.from({ length: 6 }).map((_, index) => (
+                <div key={index} className="relative">
+                  {/* Circle */}
+                  <span className={`absolute -left-11 w-6 h-6 rounded-full bg-primary-teal border-4 border-[#00aea5] z-10 ${index === 0 ? "-top-1 bg-[#00aea5]" : "top-1 bg-white"}`}></span>
+
+                  {/* Text Content */}
+                  <div>
+                    <h3 className="font-semibold text-lg xl:text-[26px] text-primary-dark">
+                      Day: {index + 1}
+                    </h3>
+                    <p className="text-gray-700 text-lg xl:text-2xl">
+                      Vikram Sarabhai Space Centre (ISRO)
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+            {/* Map Image */}
+            <div className="rounded-2xl overflow-hidden shadow-md">
+              <img
+                src="/images/map-example.png"
+                alt="Map"
+                className="w-full h-auto object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </article>
     </>
   );
 }
