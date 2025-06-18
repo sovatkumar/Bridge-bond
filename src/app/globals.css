@@ -276,6 +276,9 @@ body {
 .redBoxShadow {
   box-shadow: 4px 4px 24px 0 rgba(240, 64, 66, 0.16);
 }
+.border-faint-red {
+  border: 1px solid rgba(240, 64, 66, 0.32);
+}
 h1,
 h2,
 h3,
