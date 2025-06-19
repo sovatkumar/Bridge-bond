@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import {
   Card,
 } from "@/components/ui/card"
@@ -9,18 +10,18 @@ function HomeBanner() {
     <>
       <Card className="2xl:min-h-[700px] grid grid-cols-1 md:grid-cols-2 gap-8 !rounded-[2.5rem] md:items-center justify-around bg-[url('/images/home-banner-background.png')] bg-no-repeat bg-cover border-0 !pb-0">
         {/* Left Column - Text Content */}
-        <div className="space-y-6 lg:p-12 2xl:p-16 px-4 text-center text-white md:text-start">
+        <div className="space-y-2 md:space-y-5 lg:p-12 2xl:p-16 px-4 text-center text-white md:text-start">
           <h1 className="text-3xl md:text-4xl xl:text-5xl 2xl:text-7xl font-bold leading-tight">
             Fuel Your <br /> Curiosity. Let the
             Journey Begin.
           </h1>
-          <p className="text-base md:text-lg xl:text-xl text-white">
+          <p className="text-base md:text-lg xl:text-xl 2xl:text-2xl text-white">
             With roam n learn, every trip&apos;s a new story full of epic sights, big
             laughs, and a vibe you can&apos;t fake. If you are ready to go beyond the
             usual, you are in the right place. Let&apos;s roam.
           </p>
           <button className="bg-primary-red text-white font-semibold px-10 py-3 rounded-full w-fit transition">
-            LET&apos;S GO
+            <Link href="/auth/sign-up"> LET&apos;S GO</Link>
           </button>
         </div>
 

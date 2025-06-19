@@ -40,6 +40,7 @@ function Pagebanner({ title }: PageBannerProps) {
             </BreadcrumbItem>
             <BreadcrumbSeparator className="text-white" />
             <BreadcrumbItem>
+
               <BreadcrumbLink href="/components" className="text-base lg:text-lg 2xl:!text-xl text-white">
                 Components
               </BreadcrumbLink>

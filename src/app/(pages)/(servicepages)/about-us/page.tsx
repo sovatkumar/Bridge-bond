@@ -43,7 +43,7 @@ export default function aboutus() {
         mainCss:
           "flex-row-reverse  bg-[url('/images/home-banner-background.png')] bg-no-repeat bg-cover rounded-4xl",
         heading: "text-white",
-        text: "text-white xl:w-[90%]",
+        text: "text-white 3xl:w-[90%]",
         paraHeading: "",
       },
       icon: "",

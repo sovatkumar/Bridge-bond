@@ -78,8 +78,8 @@ export default function Home() {
       <article className="min-h-min container py-10 lg:py-20">
         <div className="md:grid grid-cols-2 gap-10">
           {/* Left Section: Promotional Message */}
-          <div className="space-y-4 text-start">
-            <h2 className="text-4xl lg:text-5xl xl:text-[52px] font-bold text-center md:text-left">
+          <div className="space-y-4 text-center md:text-start">
+            <h2 className="text-4xl lg:text-5xl xl:text-[52px] font-bold">
               Top <span className="text-red-500">Destinations</span>
             </h2>
             <h4 className="text-xl lg:text-2xl font-semibold">

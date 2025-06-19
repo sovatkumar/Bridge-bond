@@ -115,7 +115,7 @@ export default function page() {
                         {paragraphs.map((text, index) => (
                             <p
                                 key={index}
-                                className="flex gap-2 items-start text-lg md:text-2xl pb-3 leading-normal lg:leading-9"
+                                className="flex gap-2 items-start md:items-center text-lg md:text-2xl pb-3 leading-normal lg:leading-9"
                             >
                                 <Image
                                     width={24}
@@ -180,7 +180,7 @@ export default function page() {
                         {DataParagraphs.map((text, index) => (
                             <p
                                 key={index}
-                                className="flex gap-2 items-start text-lg md:text-2xl pb-3 leading-normal lg:leading-9"
+                                className="flex gap-2 items-start md:items-center text-lg md:text-2xl pb-3 leading-normal lg:leading-9"
                             >
                                 <Image
                                     width={24}
@@ -205,7 +205,7 @@ export default function page() {
                         {ChoicesPara.map((text, index) => (
                             <p
                                 key={index}
-                                className="flex gap-2 items-start text-lg md:text-2xl pb-3 leading-normal lg:leading-9"
+                                className="flex gap-2 items-start md:items-center text-lg md:text-2xl pb-3 leading-normal lg:leading-9"
                             >
                                 <Image
                                     width={24}

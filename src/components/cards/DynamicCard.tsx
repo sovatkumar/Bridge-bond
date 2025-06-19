@@ -32,7 +32,7 @@ export default function DynamicCard({
       className={`container ${className.mainCss} !my-20 grid lg:grid-cols-2 !rounded-3xl overflow-hidden items-center md:items-start gap-x-8 xl:gap-x-12 md:p-10 p-4 2xl:p-16 border-0`}
     >
       {/* Text Content */}
-      <div className="order-2 lg:order-1 w-full flex flex-col gap-y-6 2xl:py-10">
+      <div className="order-2 lg:order-1 w-full flex flex-col gap-y-6 2xl:py-7 3xl:py-10">
         <div className="space-y-3 lg:space-x-5">
           <h2
             className={`text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold ${className.heading}`}

@@ -45,7 +45,6 @@ export default function RootLayout({
                 width={558}
                 height={726}
                 className="m-auto object-cover"
-
               />
             </div>
           </div>

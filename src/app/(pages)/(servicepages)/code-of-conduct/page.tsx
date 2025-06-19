@@ -33,7 +33,7 @@ export default function CodeOfConduct() {
               <Image
                 width={558}
                 height={300}
-                src={`/images/code-of-conduct.png`}
+                src={`/images/respect-everyone.png`}
                 alt="Main Interaction"
                 className="rounded-3xl w-full object-cover"
               />
@@ -46,7 +46,7 @@ export default function CodeOfConduct() {
                 </h2>
 
                 <ul className={`space-y-5 xl:space-y-8 leading-relaxed`}>
-                  <li className="flex gap-2 items-start text-base lg:text-lg xl:text-xl">
+                  <li className="flex gap-2 items-start md:items-center text-base lg:text-lg xl:text-xl">
                     <Image
                       width={28}
                       height={28}
@@ -57,13 +57,13 @@ export default function CodeOfConduct() {
                     Treat fellow students, staff, locals, and cultures with
                     kindness and respect.
                   </li>
-                  <li className="flex gap-2 items-start text-base lg:text-lg xl:text-xl">
+                  <li className="flex gap-2 items-start md:items-center text-base lg:text-lg xl:text-xl">
                     <Image
                       width={28}
                       height={28}
                       src={"/icons/objects-red.png"}
                       alt="list-icon"
-                      className="object-contain pt-2 md:pt-1"
+                      className="object-contain"
                     />
                     Listen actively and be open to different viewpoints and
                     experiences.
@@ -87,33 +87,33 @@ export default function CodeOfConduct() {
                   Be Responsible
                 </h2>
                 <ul className={`space-y-5 xl:space-y-8 leading-relaxed`}>
-                  <li className="flex gap-2 items-start text-base lg:text-lg xl:text-xl">
+                  <li className="flex gap-2 items-start md:items-center text-base lg:text-lg xl:text-xl">
                     <Image
                       width={28}
                       height={28}
                       src={"/icons/objects-white.png"}
                       alt="list-icon"
-                      className="object-contain pt-2 md:pt-1"
+                      className="object-contain"
                     />
                     Follow instructions from tour leaders and guides at all times.
                   </li>
-                  <li className="flex gap-2 items-start text-base lg:text-lg xl:text-xl">
+                  <li className="flex gap-2 items-start md:items-center text-base lg:text-lg xl:text-xl">
                     <Image
                       width={28}
                       height={28}
                       src={"/icons/objects-white.png"}
                       alt="list-icon"
-                      className="object-contain pt-2 md:pt-1"
+                      className="object-contain"
                     />
                     Keep track of your belongings and take care of shared spaces.
                   </li>
-                  <li className="flex gap-2 items-start text-base lg:text-lg xl:text-xl">
+                  <li className="flex gap-2 items-start md:items-center text-base lg:text-lg xl:text-xl">
                     <Image
                       width={28}
                       height={28}
                       src={"/icons/objects-white.png"}
                       alt="list-icon"
-                      className="object-contain pt-2 md:pt-1"
+                      className="object-contain"
                     />
                     Be punctual for all activities, meals, and group meetups.
                   </li>
@@ -124,7 +124,7 @@ export default function CodeOfConduct() {
               <Image
                 width={558}
                 height={300}
-                src={`/images/respect-everyone.png`}
+                src={`/images/be-responsible.png`}
                 alt="Main Interaction"
                 className="rounded-3xl w-full object-cover"
               />
@@ -154,33 +154,33 @@ export default function CodeOfConduct() {
                 </h2>
 
                 <ul className={`space-y-5 xl:space-y-8 leading-relaxed`}>
-                  <li className="flex gap-2 items-start text-base lg:text-lg xl:text-xl">
+                  <li className="flex gap-2 items-start md:items-center text-base lg:text-lg xl:text-xl">
                     <Image
                       width={28}
                       height={28}
                       src={"/icons/objects-red.png"}
                       alt="list-icon"
-                      className="object-contain pt-2 md:pt-1"
+                      className="object-contain"
                     />
                     Never wander off alone or leave the group without permission.
                   </li>
-                  <li className="flex gap-2 items-start text-base lg:text-lg xl:text-xl">
+                  <li className="flex gap-2 items-start md:items-center text-base lg:text-lg xl:text-xl">
                     <Image
                       width={28}
                       height={28}
                       src={"/icons/objects-red.png"}
                       alt="list-icon"
-                      className="object-contain pt-2 md:pt-1"
+                      className="object-contain"
                     />
                     Follow all safety rules and local laws.
                   </li>
-                  <li className="flex gap-2 items-start text-base lg:text-lg xl:text-xl">
+                  <li className="flex gap-2 items-start md:items-center text-base lg:text-lg xl:text-xl">
                     <Image
                       width={28}
                       height={28}
                       src={"/icons/objects-red.png"}
                       alt="list-icon"
-                      className="object-contain pt-2 md:pt-1"
+                      className="object-contain"
                     />
                     Report any concerns or issues to your tour leader immediately.
                   </li>
@@ -204,34 +204,34 @@ export default function CodeOfConduct() {
                 </h2>
 
                 <ul className={`space-y-5 xl:space-y-8 leading-relaxed`}>
-                  <li className="flex gap-2 items-start text-base lg:text-lg xl:text-xl">
+                  <li className="flex gap-2 items-start md:items-center text-base lg:text-lg xl:text-xl">
                     <Image
                       width={28}
                       height={28}
                       src={"/icons/objects-white.png"}
                       alt="list-icon"
-                      className="object-contain pt-2 md:pt-1"
+                      className="object-contain"
                     />
                     Maintain appropriate behavior in public and online.
                   </li>
-                  <li className="flex gap-2 items-start text-base lg:text-lg xl:text-xl">
+                  <li className="flex gap-2 items-start md:items-center text-base lg:text-lg xl:text-xl">
                     <Image
                       width={28}
                       height={28}
                       src={"/icons/objects-white.png"}
                       alt="list-icon"
-                      className="object-contain pt-2 md:pt-1"
+                      className="object-contain"
                     />
                     Dress appropriately based on the location and cultural
                     setting.
                   </li>
-                  <li className="flex gap-2 items-start text-base lg:text-lg xl:text-xl">
+                  <li className="flex gap-2 items-start md:items-center text-base lg:text-lg xl:text-xl">
                     <Image
                       width={28}
                       height={28}
                       src={"/icons/objects-white.png"}
                       alt="list-icon"
-                      className="object-contain pt-2 md:pt-1"
+                      className="object-contain"
                     />
                     Use social media respectfully and avoid posting anything
                     offensive.
@@ -275,33 +275,33 @@ export default function CodeOfConduct() {
                 <p className="text-base lg:text-lg xl:text-xl">We do not allow:</p>
 
                 <ul className={`space-y-5 xl:space-y-8 leading-relaxed`}>
-                  <li className="flex gap-2 items-start text-base lg:text-lg xl:text-xl">
+                  <li className="flex gap-2 items-start md:items-center text-base lg:text-lg xl:text-xl">
                     <Image
                       width={28}
                       height={28}
                       src={"/icons/objects-red.png"}
                       alt="list-icon"
-                      className="object-contain pt-2 md:pt-1"
+                      className="object-contain"
                     />
                     Bullying, harassment, or discrimination of any kind.
                   </li>
-                  <li className="flex gap-2 items-start text-base lg:text-lg xl:text-xl">
+                  <li className="flex gap-2 items-start md:items-center text-base lg:text-lg xl:text-xl">
                     <Image
                       width={28}
                       height={28}
                       src={"/icons/objects-red.png"}
                       alt="list-icon"
-                      className="object-contain pt-2 md:pt-1"
+                      className="object-contain"
                     />
                     Possession or use of drugs, alcohol, or tobacco.
                   </li>
-                  <li className="flex gap-2 items-start text-base lg:text-lg xl:text-xl">
+                  <li className="flex gap-2 items-start md:items-center text-base lg:text-lg xl:text-xl">
                     <Image
                       width={28}
                       height={28}
                       src={"/icons/objects-red.png"}
                       alt="list-icon"
-                      className="object-contain pt-2 md:pt-1"
+                      className="object-contain"
                     />
                     Theft, vandalism, or any illegal activity.
                   </li>
