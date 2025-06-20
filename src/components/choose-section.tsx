@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function ChooseSection() {
   return (
     <section className="py-16 px-4 max-w-7xl mx-auto">
-      <h2 className="text-4xl md:text-5xl font-bold text-center mb-24">
+      <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 lg:mb-36">
         Why Choose <span className="text-red-500">Us</span> ?
       </h2>
 

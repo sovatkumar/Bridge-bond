@@ -62,7 +62,7 @@ const BannerData = [
       ]
     },
     {
-      id: "terms-condition",
+      id: "terms-conditions",
       title: "Terms & Condition",
       description:
         "Welcome to Roam N Learn. By using our website, booking a trip, or participating in any of our programs, you agree to comply with and be bound by the following terms and conditions. Please read them carefully.",
@@ -84,7 +84,7 @@ const BannerData = [
       ]
     },
     {
-      id: "sign-up",
+      id: "auth/sign-up",
       title: "Sign Up",
       description:
         "Enter your Credentials to Create your account",
@@ -92,7 +92,7 @@ const BannerData = [
       breadcrumb: null
     },
     {
-      id: "sign-in",
+      id: "auth/sign-in",
       title: "Sign In",
       description:
         "Enter your Credentials to Sign In your account",
@@ -100,7 +100,7 @@ const BannerData = [
       breadcrumb: null
     },
     {
-      id: "register",
+      id: "auth/register",
       title: "Register Now",
       description:
         "Enter your Credentials to Register",

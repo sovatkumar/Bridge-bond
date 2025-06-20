@@ -11,16 +11,19 @@ import {
 } from "@/components/ui/breadcrumb";
 
 type PageBannerProps = {
-  id: String,
-  title: String,
-  breadcrumb: Array<{label:String ,href:String}> | null,
-  backgroundImage: String,
-  description: String,
+  id: string,
+  title: string,
+  breadcrumb: Array<{label: string, href: string}> | null,
+  backgroundImage: string,
+  description: string | string[] | null,
 };
 
 function Pagebanner({id, title, backgroundImage, description, breadcrumb}: PageBannerProps) {
   return (
-    <Card className="container !pb-0 relative h-full bg-no-repeat bg-center bg-cover border-0 overflow-hidden !rounded-[2.5rem] bg-[url('/images/home-banner-background.png')] bg-no-repeat bg-cover pt-10 z-10 md:grid grid-cols-1 md:grid-cols-7 gap-x-8">
+    <Card 
+      className={`container !pb-0 relative h-full bg-no-repeat bg-center bg-cover border-0 overflow-hidden !rounded-[2.5rem] pt-10 z-10 md:grid grid-cols-1 md:grid-cols-7 gap-x-8`}
+      style={{ backgroundImage: `url(${backgroundImage})` }}
+    >
       <div className="hidden lg:flex col-span-2 relative w-full 2xl:h-[400px]">
         <Image
           src="/images/bags.png"
@@ -31,32 +34,33 @@ function Pagebanner({id, title, backgroundImage, description, breadcrumb}: PageB
 
         />
       </div>
-      <CardContent className="col-span-3 flex flex-col justify-start md:gap-y-2 xl:gap-y-4 md:!px-0 2xl:px-16 2xl:py-12 text-center text-white">
+      <CardContent className="col-span-3 flex flex-col justify-start md:gap-y-2 xl:gap-y-4 md:!px-0 2xl:px-16 2xl:py-12 text-center text-white self-center">
         <h2 className="text-3xl md:text-5xl xl:text-6xl 2xl:text-7xl font-bold leading-tight">
           {title}
         </h2>
-        <Breadcrumb className="flex items-center justify-center">
-          <BreadcrumbList>
-            <BreadcrumbItem>
-              <BreadcrumbLink href="/" className="text-base lg:text-lg 2xl:!text-xl text-white">
-                Home
-              </BreadcrumbLink>
-            </BreadcrumbItem>
-            <BreadcrumbSeparator className="text-white" />
-            <BreadcrumbItem>
-
-              <BreadcrumbLink href="/components" className="text-base lg:text-lg 2xl:!text-xl text-white">
-                Components
-              </BreadcrumbLink>
-            </BreadcrumbItem>
-            <BreadcrumbSeparator className="text-white" />
-            <BreadcrumbItem>
-              <BreadcrumbPage className="text-lg md:!text-xl 2xl:text-2xl text-white">Breadcrumb</BreadcrumbPage>
-            </BreadcrumbItem>
-          </BreadcrumbList>
-        </Breadcrumb>
+        {breadcrumb && (
+          <Breadcrumb className="flex items-center justify-center">
+            <BreadcrumbList>
+              {breadcrumb.map((item, index) => (
+                <React.Fragment key={index}>
+                  <BreadcrumbItem>
+                    <BreadcrumbLink href={item.href.toString()} className="text-base lg:text-lg 2xl:!text-xl text-white">
+                      {item.label}
+                    </BreadcrumbLink>
+                  </BreadcrumbItem>
+                  {index < breadcrumb.length - 1 && <BreadcrumbSeparator className="text-white" />}
+                </React.Fragment>
+              ))}
+            </BreadcrumbList>
+          </Breadcrumb>
+        )}
         <p className="text-sm lg:text-base xl:text-lg 2xl:text-xl leading-normal">
-          {description}
+          {Array.isArray(description) ? description.map((desc, index) => (
+            <React.Fragment key={index}>
+              {desc}
+              {index < description.length - 1 && <br />}
+            </React.Fragment>
+          )) : description}
         </p>
       </CardContent>
       <div className="col-span-2 relative w-full 2xl:h-[400px]">
