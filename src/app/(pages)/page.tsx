@@ -18,6 +18,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import ChooseSection from "@/components/choose-section";
 
 export default function Home() {
   const feedback = [
@@ -140,7 +141,7 @@ export default function Home() {
 
       {/* why choose Us */}
       <article>
-        <div className="container min-h-min 2xl:max-w-8xl py-10 lg:py-20">
+        {/* <div className="container min-h-min 2xl:max-w-8xl py-10 lg:py-20">
           <h2 className="text-3xl lg:text-5xl xl:text-52 font-bold mb-5 md:mb-8 text-center">
             Why Choose <span className="primary-red">Us?</span>
           </h2>
@@ -207,7 +208,8 @@ export default function Home() {
               </Card>
             ))}
           </div>
-        </div>
+        </div> */}
+        <ChooseSection />
       </article>
 
       {/*  Our Licenses */}
